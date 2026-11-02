@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these artifacts, please cite them as below."
+title: "EFCH EXP-019 research artifacts"
+type: software
+authors:
+  - family-names: "Cueva Huari"
+    given-names: "Erik Fisher"
+    orcid: "https://orcid.org/0000-0001-7268-5510"
+    affiliation: "VentureSynaptic Labs"
+repository-code: "https://github.com/venture-synaptic/efch-exp019-artifacts"
+license: Apache-2.0
+version: "v1.0-exp019"
+date-released: "2026-11-02"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23873678"
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.23873679"
+    description: "Version v1.0-exp019"

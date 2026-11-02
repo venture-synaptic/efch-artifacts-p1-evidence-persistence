@@ -1,5 +1,10 @@
 # EFCH EXP-019 — research artifacts
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23873679.svg)](https://doi.org/10.5281/zenodo.23873679)
+
+Archived at Zenodo: version `v1.0-exp019`, DOI [10.5281/zenodo.23873679](https://doi.org/10.5281/zenodo.23873679);
+all versions: [10.5281/zenodo.23873678](https://doi.org/10.5281/zenodo.23873678). See `CITATION.cff`.
+
 Artifacts for the draft manuscript *Safe Reuse Is Not Enough: A Controlled Comparison of Semantic
 Evidence Persistence, Full Reverification, and Strengthened Memoization* (`paper/main.tex`).
 

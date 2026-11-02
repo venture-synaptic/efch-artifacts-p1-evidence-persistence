@@ -68,6 +68,12 @@ interpretation.
 - The internal audit was performed by an AI agent (Codex), not by an independent human researcher.
 - Logs contain absolute paths of the original machine.
 
+## Related artifacts
+
+Other VentureSynaptic Labs artifact packages for EFCH (one repository and DOI per manuscript):
+
+- [efch-artifacts-lang](https://github.com/venture-synaptic/efch-artifacts-lang): EFCH Lang experiments (EXP-004 to EXP-015) and their manuscript.
+
 ## License
 
 - **Code** (`efch/`, `especificacion/*.py`, `experimentos/`, `scripts/`): [Apache-2.0](LICENSE).

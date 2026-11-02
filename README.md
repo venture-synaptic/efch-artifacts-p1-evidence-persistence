@@ -72,7 +72,7 @@ interpretation.
 
 Other VentureSynaptic Labs artifact packages for EFCH (one repository and DOI per manuscript):
 
-- [efch-artifacts-lang](https://github.com/venture-synaptic/efch-artifacts-lang): EFCH Lang experiments (EXP-004 to EXP-015) and their manuscript.
+- [efch-artifacts-lang](https://github.com/venture-synaptic/efch-artifacts-lang): EFCH Lang experiments (EXP-004 to EXP-015) and their manuscript (DOI [10.5281/zenodo.23874419](https://doi.org/10.5281/zenodo.23874419)).
 
 ## License
 

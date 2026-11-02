@@ -9,7 +9,7 @@ authors:
     affiliation: "VentureSynaptic Labs"
 repository-code: "https://github.com/venture-synaptic/efch-exp019-artifacts"
 license: Apache-2.0
-version: "v1.0-exp019"
+version: "v1.1-exp019"
 date-released: "2026-11-02"
 identifiers:
   - type: doi

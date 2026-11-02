@@ -1,9 +1,9 @@
-c9f0ef27944f5b7c8c627cb4771efbcfff5e790764e75b57e6d5ab461e52b37c  ./CITATION.cff
+b2c6e0bce07c978b3a06fec4ddde7f06f64efd238ca1135439f26c5356c5c1d5  ./CITATION.cff
 c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c  ./LICENSE
 5eebefd3682e32d661f307a28539b304e5e52fb1eb33ba214e61d7a57663e4f0  ./LICENSE-CC-BY-4.0
 6b678ad7a722dc7981b1871652a0044b7f94fbd7e3ea90412f7444ce361c390c  ./NOTICE
 c89baebb300e267ee15820e9e8a80b7701307deed62eb66d32a0fdd9aa76c168  ./README-efch-0.1.0a1.md
-a39cc40708d08a8bbbd9e8c2da5e25cc7738f898e92c926f69de327f6276fd79  ./README.md
+2baa5e25d8812bf09dba46bcc08f806adba1b3f5aec6ff4c381c510f7a70dfff  ./README.md
 6f7156051f73c8b6d3c336b33981961d466c31235fc83e3d04bb8f01b4e5b719  ./data/exp019-resultados.tar.gz
 ccc34fc0569a0c6343bcb0830c98a50cf6a6c334564724e4f59fad22d41101e7  ./docs/diseno-identidad-evidencias.md
 a030c4ac56e128f7af9977d1e2baa0a2de2b58c03b166cae647e66e38eed91da  ./docs/experimentos/EXP-019-resultados.md
@@ -641,6 +641,6 @@ f2bcb209f035f76ee92119981f8272c0e319e6386579dd37e0b44b57aaed800f  ./experimentos
 9d079b267d9d14ed03b822bdda36be361223516085bb3d0a503e8790c62754d5  ./experimentos/exp019/preparacion/P-w6-xor1-q/meta.json
 6a333bba181e25e4a903d1a714f416ee05ded54efdf6eeb6e44d0ef9aa8097ef  ./experimentos/exp019/preparacion/orden.json
 7a2dc03ef777ea5b93b54690fcbe1caaaa5d4bbae96a691d84c2064c8e8f3eb8  ./paper/README.md
-91e997ed34d2f59427e3ffe90e0095c45a739d2e6a8818bc8b5747f6f69120da  ./paper/main.pdf
-a0354a5f3c189c17222dce622ed3cfd1f3c69154669784d81e66919272325b46  ./paper/main.tex
+ed430230131cebb2db01482c12ce5d1ea4ba605be5eed3fdb821a094b0db1b8a  ./paper/main.pdf
+aa28bb87e6a6e984c60f4823970bfece94e4a7838dd28286069fdeaab82e63d1  ./paper/main.tex
 112375e9056ad6de88061f74d994c3e005676289ba6b588394b05f3dd15e6d58  ./scripts/vendor_z3.sh

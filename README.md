@@ -25,7 +25,7 @@ and this README and `SHA256SUMS` were added.
 | `efch/`, `especificacion/`, `experimentos/exp019/`, `scripts/vendor_z3.sh`, `docs/experimentos/EXP-019.md`, `README-efch-0.1.0a1.md` | tag `exp019-instrumento` (`4aa18a7450bbf034d67048034e09cae98d970c2f`); protocol frozen at tag `exp019-protocolo` (`d94471afae4c32c8d4572f1d7086327f97d61f65`) |
 | `docs/experimentos/EXP-019-resultados.md`, `docs/exploracion/*`, `docs/diseno-identidad-evidencias.md` | `main` at `26315176c3e4d04e9a29612818e8f8b0e762a8bf` |
 | `data/exp019-resultados.tar.gz` (raw evaluation, logs, internal audit; `resultados/exp019/`) | branch `preparacion/exp019` at `531c847f239b15c352449428b8b39d1f675257f7` |
-| `paper/` | manuscript draft, 1 November 2026 |
+| `paper/` | manuscript draft and PDF (updated in v1.1-exp019) |
 
 The tarball is deterministic (sorted names, fixed mtime, `gzip -n`). Inside it,
 `resultados/exp019/ARBOL-evaluacion.sha256` and `evaluacion-huellas.sha256` are the original digests.
@@ -50,6 +50,16 @@ python3 experimentos/exp019/ejecutar.py --preparacion
 
 The evaluation set is already public here, so a rerun is an *informed reproduction*, not a new
 preregistered test (see `docs/experimentos/EXP-019.md`, "Artefactos reproducibles y custodia").
+
+## Contributors
+
+The experiment, instrument and reports were produced by AI agents under the author's direction:
+Claude (Anthropic) implemented the instrument and prototypes and coordinated the work; Codex
+(OpenAI, "Sol") performed the internal audit of the EXP-019 evaluation (recomputation and a complete
+repeated execution, `resultados/exp019/auditoria-sol-evaluacion/` in the data archive), the review of
+the P0/P1 follow-up (`docs/exploracion/semantic-store-hibrido-P0P1-dictamen-sol.md`) and the
+literature verification used in the manuscript. The author is responsible for the decisions and
+interpretation.
 
 ## Known limitations
 

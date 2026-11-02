@@ -55,4 +55,8 @@ preregistered test (see `docs/experimentos/EXP-019.md`, "Artefactos reproducible
 
 ## License
 
-Pending author decision. Until a license is added, no reuse rights are granted.
+- **Code** (`efch/`, `especificacion/*.py`, `experimentos/`, `scripts/`): [Apache-2.0](LICENSE).
+- **Data, manuscript and documents** (`data/`, `docs/`, `paper/`, `especificacion/ESPECIFICACION.md`,
+  `especificacion/resultados/`, README files): [CC-BY-4.0](LICENSE-CC-BY-4.0).
+
+Copyright 2026 Erik Fisher Cueva Huari (VentureSynaptic Labs). See [NOTICE](NOTICE).

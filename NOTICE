@@ -1,0 +1,11 @@
+EFCH EXP-019 research artifacts
+Copyright 2026 Erik Fisher Cueva Huari (VentureSynaptic Labs)
+
+Source code (efch/, especificacion/*.py, experimentos/, scripts/) is licensed under the
+Apache License, Version 2.0 (LICENSE).
+
+Data, manuscript and documents (data/, docs/, paper/, especificacion/ESPECIFICACION.md,
+especificacion/resultados/, README files) are licensed under Creative Commons Attribution 4.0
+International (LICENSE-CC-BY-4.0).
+
+Z3 is not included; scripts/vendor_z3.sh downloads it under its own MIT license.

@@ -1,0 +1,28 @@
+{
+ "ancho": 5,
+ "cambio": "eq",
+ "candidatas": {
+  "c0": "(xor x 1)",
+  "c1": "(or (xor x 1) 0)",
+  "c2": "(xor (xor (xor x 1) 1) 1)"
+ },
+ "contaminada": false,
+ "control": true,
+ "cuerpo": "xor1",
+ "cuerpos_antes": {
+  "f": "(xor x 1)",
+  "h": "x",
+  "q": "0"
+ },
+ "cuerpos_despues": {
+  "f": "(xor (xor x 1) 0)",
+  "h": "x",
+  "q": "0"
+ },
+ "doc_f_despues": null,
+ "evoluciona": "f",
+ "familia": "ausencia o contradicción",
+ "fase0_extra": null,
+ "gemelo": "P-w5-xor1-eq",
+ "id": "KP6-contradiccion-de-clase"
+}

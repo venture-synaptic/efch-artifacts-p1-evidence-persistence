@@ -1,0 +1,149 @@
+{
+ "comprobacion": {
+  "certificado": "b61dcd8f078c3793b021e7b124c3b9ae06ef4176960de1e71a4a671b5ff63258",
+  "tipo": "validar"
+ },
+ "descripcion": "REAL de una candidata de EFCH Lang con traductor, efch-c y cbmc",
+ "esperado": {
+  "valido": true
+ },
+ "nombre": "valido-lang-real",
+ "paquete": {
+  "afirmaciones": {
+   "56be1920e0b539f16d4623ec181e1166ff20c461ffb7e3ad0946089a406575e2": {
+    "clase": "REAL",
+    "contexto": {},
+    "esquema": "efch-evidencia/2.5",
+    "id": "56be1920e0b539f16d4623ec181e1166ff20c461ffb7e3ad0946089a406575e2",
+    "semantica": "efch-0.1",
+    "sujetos": {
+     "candidata": "bc1cc0afedbcdc579c7da8fbe29758a842d6bfdfd00c40ffefcc0a4e1186736d",
+     "computacion": "1a21fc8ee86cb68953dbbcd02062e7403ef4878e85cbdf80d4257dec8eb6ddec"
+    }
+   }
+  },
+  "certificados": {
+   "b61dcd8f078c3793b021e7b124c3b9ae06ef4176960de1e71a4a671b5ff63258": {
+    "afirmacion": "56be1920e0b539f16d4623ec181e1166ff20c461ffb7e3ad0946089a406575e2",
+    "base": {
+     "cbmc": "v1",
+     "efch-c": "v1",
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "reglas": "v1",
+     "traductor": "v1",
+     "z3": "v1"
+    },
+    "cierre": {
+     "9efbca29dd66c9788454c1f560657eed61495cae559d2d06101667b63b3441e0": "bc1cc0afedbcdc579c7da8fbe29758a842d6bfdfd00c40ffefcc0a4e1186736d",
+     "a3e7480aa442b0a379496a3b31d8116854d754e6429801c514db8da147c20526": "1a21fc8ee86cb68953dbbcd02062e7403ef4878e85cbdf80d4257dec8eb6ddec"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "estado": "probado",
+    "id": "b61dcd8f078c3793b021e7b124c3b9ae06ef4176960de1e71a4a671b5ff63258",
+    "instantanea": "fb3df4629f204cabd04a3f04009b44653bb494f5b8496bfe24bd84db25e2ea8d",
+    "objeto_verificado": "30cf365aaf90887c02ac2cd0d55f5c51f2ab06cd5a0610caa7303da4bbdeec91",
+    "premisas": {},
+    "procedencia": null,
+    "regla": "directa",
+    "semantica": "efch-0.1",
+    "via": "directa"
+   }
+  },
+  "esquema": "efch-evidencia/2.5",
+  "instantaneas": {
+   "42d228cca7805d9cc0279a10302ca80f26210319fd8285c0ba0d99b09bc18460": {
+    "base": {
+     "abi": "v1",
+     "cpu": "v1",
+     "efch-c": "v1",
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "gcc": "v1",
+     "reglas": "v1",
+     "traductor": "v1",
+     "workload": "v1",
+     "z3": "v1"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "id": "42d228cca7805d9cc0279a10302ca80f26210319fd8285c0ba0d99b09bc18460",
+    "revisiones": {
+     "9efbca29dd66c9788454c1f560657eed61495cae559d2d06101667b63b3441e0": "bc1cc0afedbcdc579c7da8fbe29758a842d6bfdfd00c40ffefcc0a4e1186736d",
+     "a3e7480aa442b0a379496a3b31d8116854d754e6429801c514db8da147c20526": "1a21fc8ee86cb68953dbbcd02062e7403ef4878e85cbdf80d4257dec8eb6ddec"
+    },
+    "semantica": "efch-0.1"
+   },
+   "fb3df4629f204cabd04a3f04009b44653bb494f5b8496bfe24bd84db25e2ea8d": {
+    "base": {
+     "abi": "v1",
+     "cbmc": "v1",
+     "cpu": "v1",
+     "efch-c": "v1",
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "gcc": "v1",
+     "reglas": "v1",
+     "traductor": "v1",
+     "workload": "v1",
+     "z3": "v1"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "id": "fb3df4629f204cabd04a3f04009b44653bb494f5b8496bfe24bd84db25e2ea8d",
+    "revisiones": {
+     "9efbca29dd66c9788454c1f560657eed61495cae559d2d06101667b63b3441e0": "bc1cc0afedbcdc579c7da8fbe29758a842d6bfdfd00c40ffefcc0a4e1186736d",
+     "a3e7480aa442b0a379496a3b31d8116854d754e6429801c514db8da147c20526": "1a21fc8ee86cb68953dbbcd02062e7403ef4878e85cbdf80d4257dec8eb6ddec"
+    },
+    "semantica": "efch-0.1"
+   }
+  },
+  "ranuras": {
+   "9efbca29dd66c9788454c1f560657eed61495cae559d2d06101667b63b3441e0": {
+    "ambito": "a3e7480aa442b0a379496a3b31d8116854d754e6429801c514db8da147c20526",
+    "esquema": "efch-evidencia/2.5",
+    "id": "9efbca29dd66c9788454c1f560657eed61495cae559d2d06101667b63b3441e0",
+    "nombre": "varint_decode-lang",
+    "tipo": "candidata-lang"
+   },
+   "a3e7480aa442b0a379496a3b31d8116854d754e6429801c514db8da147c20526": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "a3e7480aa442b0a379496a3b31d8116854d754e6429801c514db8da147c20526",
+    "nombre": "varint-decode",
+    "tipo": "computacion"
+   }
+  },
+  "registros": {},
+  "revisiones": {
+   "1a21fc8ee86cb68953dbbcd02062e7403ef4878e85cbdf80d4257dec8eb6ddec": {
+    "contenido": "dbd9372954131b2c8f50c44017d0c59f7701c962b3a2abd3ee75532d996d9812",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation varint-decode ((buf (bytes 11))) (option (bv 64) (bv 8)))",
+    "forma_canonica": "(efch 0.1 (computation varint-decode ((buf (bytes 11))) (option (bv 64) (bv 8))) (ite (all (ult (const 16 0) (len buf)) (ult (byte buf (const 16 0)) (const 8 128))) (let _0 (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (ite (all false (eq (byte buf (const 16 0)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _0 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _0) (add (const 8 0) (const 8 1)))))) (ite (all (ult (const 16 1) (len buf)) (ult (byte buf (const 16 1)) (const 8 128))) (let _1 (or (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (shl (zext 70 (and (byte buf (const 16 1)) (const 8 127))) (mul (const 70 7) (const 70 1)))) (ite (all true (eq (byte buf (const 16 1)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _1 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _1) (add (const 8 1) (const 8 1)))))) (ite (all (ult (const 16 2) (len buf)) (ult (byte buf (const 16 2)) (const 8 128))) (let _2 (or (or (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (shl (zext 70 (and (byte buf (const 16 1)) (const 8 127))) (mul (const 70 7) (const 70 1)))) (shl (zext 70 (and (byte buf (const 16 2)) (const 8 127))) (mul (const 70 7) (const 70 2)))) (ite (all true (eq (byte buf (const 16 2)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _2 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _2) (add (const 8 2) (const 8 1)))))) (ite (all (ult (const 16 3) (len buf)) (ult (byte buf (const 16 3)) (const 8 128))) (let _3 (or (or (or (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (shl (zext 70 (and (byte buf (const 16 1)) (const 8 127))) (mul (const 70 7) (const 70 1)))) (shl (zext 70 (and (byte buf (const 16 2)) (const 8 127))) (mul (const 70 7) (const 70 2)))) (shl (zext 70 (and (byte buf (const 16 3)) (const 8 127))) (mul (const 70 7) (const 70 3)))) (ite (all true (eq (byte buf (const 16 3)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _3 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _3) (add (const 8 3) (const 8 1)))))) (ite (all (ult (const 16 4) (len buf)) (ult (byte buf (const 16 4)) (const 8 128))) (let _4 (or (or (or (or (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (shl (zext 70 (and (byte buf (const 16 1)) (const 8 127))) (mul (const 70 7) (const 70 1)))) (shl (zext 70 (and (byte buf (const 16 2)) (const 8 127))) (mul (const 70 7) (const 70 2)))) (shl (zext 70 (and (byte buf (const 16 3)) (const 8 127))) (mul (const 70 7) (const 70 3)))) (shl (zext 70 (and (byte buf (const 16 4)) (const 8 127))) (mul (const 70 7) (const 70 4)))) (ite (all true (eq (byte buf (const 16 4)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _4 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _4) (add (const 8 4) (const 8 1)))))) (ite (all (ult (const 16 5) (len buf)) (ult (byte buf (const 16 5)) (const 8 128))) (let _5 (or (or (or (or (or (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (shl (zext 70 (and (byte buf (const 16 1)) (const 8 127))) (mul (const 70 7) (const 70 1)))) (shl (zext 70 (and (byte buf (const 16 2)) (const 8 127))) (mul (const 70 7) (const 70 2)))) (shl (zext 70 (and (byte buf (const 16 3)) (const 8 127))) (mul (const 70 7) (const 70 3)))) (shl (zext 70 (and (byte buf (const 16 4)) (const 8 127))) (mul (const 70 7) (const 70 4)))) (shl (zext 70 (and (byte buf (const 16 5)) (const 8 127))) (mul (const 70 7) (const 70 5)))) (ite (all true (eq (byte buf (const 16 5)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _5 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _5) (add (const 8 5) (const 8 1)))))) (ite (all (ult (const 16 6) (len buf)) (ult (byte buf (const 16 6)) (const 8 128))) (let _6 (or (or (or (or (or (or (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (shl (zext 70 (and (byte buf (const 16 1)) (const 8 127))) (mul (const 70 7) (const 70 1)))) (shl (zext 70 (and (byte buf (const 16 2)) (const 8 127))) (mul (const 70 7) (const 70 2)))) (shl (zext 70 (and (byte buf (const 16 3)) (const 8 127))) (mul (const 70 7) (const 70 3)))) (shl (zext 70 (and (byte buf (const 16 4)) (const 8 127))) (mul (const 70 7) (const 70 4)))) (shl (zext 70 (and (byte buf (const 16 5)) (const 8 127))) (mul (const 70 7) (const 70 5)))) (shl (zext 70 (and (byte buf (const 16 6)) (const 8 127))) (mul (const 70 7) (const 70 6)))) (ite (all true (eq (byte buf (const 16 6)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _6 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _6) (add (const 8 6) (const 8 1)))))) (ite (all (ult (const 16 7) (len buf)) (ult (byte buf (const 16 7)) (const 8 128))) (let _7 (or (or (or (or (or (or (or (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (shl (zext 70 (and (byte buf (const 16 1)) (const 8 127))) (mul (const 70 7) (const 70 1)))) (shl (zext 70 (and (byte buf (const 16 2)) (const 8 127))) (mul (const 70 7) (const 70 2)))) (shl (zext 70 (and (byte buf (const 16 3)) (const 8 127))) (mul (const 70 7) (const 70 3)))) (shl (zext 70 (and (byte buf (const 16 4)) (const 8 127))) (mul (const 70 7) (const 70 4)))) (shl (zext 70 (and (byte buf (const 16 5)) (const 8 127))) (mul (const 70 7) (const 70 5)))) (shl (zext 70 (and (byte buf (const 16 6)) (const 8 127))) (mul (const 70 7) (const 70 6)))) (shl (zext 70 (and (byte buf (const 16 7)) (const 8 127))) (mul (const 70 7) (const 70 7)))) (ite (all true (eq (byte buf (const 16 7)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _7 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _7) (add (const 8 7) (const 8 1)))))) (ite (all (ult (const 16 8) (len buf)) (ult (byte buf (const 16 8)) (const 8 128))) (let _8 (or (or (or (or (or (or (or (or (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (shl (zext 70 (and (byte buf (const 16 1)) (const 8 127))) (mul (const 70 7) (const 70 1)))) (shl (zext 70 (and (byte buf (const 16 2)) (const 8 127))) (mul (const 70 7) (const 70 2)))) (shl (zext 70 (and (byte buf (const 16 3)) (const 8 127))) (mul (const 70 7) (const 70 3)))) (shl (zext 70 (and (byte buf (const 16 4)) (const 8 127))) (mul (const 70 7) (const 70 4)))) (shl (zext 70 (and (byte buf (const 16 5)) (const 8 127))) (mul (const 70 7) (const 70 5)))) (shl (zext 70 (and (byte buf (const 16 6)) (const 8 127))) (mul (const 70 7) (const 70 6)))) (shl (zext 70 (and (byte buf (const 16 7)) (const 8 127))) (mul (const 70 7) (const 70 7)))) (shl (zext 70 (and (byte buf (const 16 8)) (const 8 127))) (mul (const 70 7) (const 70 8)))) (ite (all true (eq (byte buf (const 16 8)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _8 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _8) (add (const 8 8) (const 8 1)))))) (ite (all (ult (const 16 9) (len buf)) (ult (byte buf (const 16 9)) (const 8 128))) (let _9 (or (or (or (or (or (or (or (or (or (shl (zext 70 (and (byte buf (const 16 0)) (const 8 127))) (mul (const 70 7) (const 70 0))) (shl (zext 70 (and (byte buf (const 16 1)) (const 8 127))) (mul (const 70 7) (const 70 1)))) (shl (zext 70 (and (byte buf (const 16 2)) (const 8 127))) (mul (const 70 7) (const 70 2)))) (shl (zext 70 (and (byte buf (const 16 3)) (const 8 127))) (mul (const 70 7) (const 70 3)))) (shl (zext 70 (and (byte buf (const 16 4)) (const 8 127))) (mul (const 70 7) (const 70 4)))) (shl (zext 70 (and (byte buf (const 16 5)) (const 8 127))) (mul (const 70 7) (const 70 5)))) (shl (zext 70 (and (byte buf (const 16 6)) (const 8 127))) (mul (const 70 7) (const 70 6)))) (shl (zext 70 (and (byte buf (const 16 7)) (const 8 127))) (mul (const 70 7) (const 70 7)))) (shl (zext 70 (and (byte buf (const 16 8)) (const 8 127))) (mul (const 70 7) (const 70 8)))) (shl (zext 70 (and (byte buf (const 16 9)) (const 8 127))) (mul (const 70 7) (const 70 9)))) (ite (all true (eq (byte buf (const 16 9)) (const 8 0))) (none (option (bv 64) (bv 8))) (ite (ugt _9 (const 70 18446744073709551615)) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) (trunc 64 _9) (add (const 8 9) (const 8 1)))))) (none (option (bv 64) (bv 8))))))))))))))",
+    "forma_fuente": "452f353043eb29751aba31237db91e19ec9ce8b26bb57e857a4af926ac5877d2",
+    "fuente": "(computation varint-decode (doc \"Decodifica el prefijo canónico de buf; ignora los bytes posteriores al terminador.\") (input buf (bytes 11)) (output (option (bv 64) (bv 8))) (semantics (first t 0 10 (all (ult t (len buf)) (ult (byte buf t) 128)) (let ((v (reduce or j 0 (add t 1) (shl (zext 70 (and (byte buf j) 127)) (mul 7 j))))) (ite (all (ugt t 0) (eq (byte buf t) 0)) none (ite (ugt v 18446744073709551615) none (some (trunc 64 v) (add t 1))))) none)) (workload (seeds 20261020 1 2) (count 10000) (input buf (via varint-encode (mix (50 (bits 7)) (25 (bits 14)) (15 (bits 32)) (10 (bits 64)))))) (objective (minimize time)) (budget (llm-calls 4) (llm-usd 1.5) (smt-seconds 120)))",
+    "id": "1a21fc8ee86cb68953dbbcd02062e7403ef4878e85cbdf80d4257dec8eb6ddec",
+    "ranura": "a3e7480aa442b0a379496a3b31d8116854d754e6429801c514db8da147c20526",
+    "semantica": "efch-0.1"
+   },
+   "bc1cc0afedbcdc579c7da8fbe29758a842d6bfdfd00c40ffefcc0a4e1186736d": {
+    "contenido": "30cf365aaf90887c02ac2cd0d55f5c51f2ab06cd5a0610caa7303da4bbdeec91",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation varint-decode ((buf (bytes 11))) (option (bv 64) (bv 8)))",
+    "forma_canonica": "(efch 0.1 (computation varint-decode ((buf (bytes 11))) (option (bv 64) (bv 8))) (let _0 (const 64 0) (let _1 (ite (ult (len buf) (const 16 10)) (len buf) (const 16 10)) (ite (ult (const 16 0) _1) (let _2 (byte buf (const 16 0)) (let _3 (or _0 (shl (zext 64 (and _2 (const 8 127))) (const 64 0))) (ite (ult _2 (const 8 128)) (ite (any (all false (eq _2 (const 8 0))) (all false (ugt _2 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _3 (const 8 1))) (ite (ult (const 16 1) _1) (let _4 (byte buf (const 16 1)) (let _5 (or _3 (shl (zext 64 (and _4 (const 8 127))) (const 64 7))) (ite (ult _4 (const 8 128)) (ite (any (all true (eq _4 (const 8 0))) (all false (ugt _4 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _5 (const 8 2))) (ite (ult (const 16 2) _1) (let _6 (byte buf (const 16 2)) (let _7 (or _5 (shl (zext 64 (and _6 (const 8 127))) (const 64 14))) (ite (ult _6 (const 8 128)) (ite (any (all true (eq _6 (const 8 0))) (all false (ugt _6 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _7 (const 8 3))) (ite (ult (const 16 3) _1) (let _8 (byte buf (const 16 3)) (let _9 (or _7 (shl (zext 64 (and _8 (const 8 127))) (const 64 21))) (ite (ult _8 (const 8 128)) (ite (any (all true (eq _8 (const 8 0))) (all false (ugt _8 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _9 (const 8 4))) (ite (ult (const 16 4) _1) (let _10 (byte buf (const 16 4)) (let _11 (or _9 (shl (zext 64 (and _10 (const 8 127))) (const 64 28))) (ite (ult _10 (const 8 128)) (ite (any (all true (eq _10 (const 8 0))) (all false (ugt _10 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _11 (const 8 5))) (ite (ult (const 16 5) _1) (let _12 (byte buf (const 16 5)) (let _13 (or _11 (shl (zext 64 (and _12 (const 8 127))) (const 64 35))) (ite (ult _12 (const 8 128)) (ite (any (all true (eq _12 (const 8 0))) (all false (ugt _12 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _13 (const 8 6))) (ite (ult (const 16 6) _1) (let _14 (byte buf (const 16 6)) (let _15 (or _13 (shl (zext 64 (and _14 (const 8 127))) (const 64 42))) (ite (ult _14 (const 8 128)) (ite (any (all true (eq _14 (const 8 0))) (all false (ugt _14 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _15 (const 8 7))) (ite (ult (const 16 7) _1) (let _16 (byte buf (const 16 7)) (let _17 (or _15 (shl (zext 64 (and _16 (const 8 127))) (const 64 49))) (ite (ult _16 (const 8 128)) (ite (any (all true (eq _16 (const 8 0))) (all false (ugt _16 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _17 (const 8 8))) (ite (ult (const 16 8) _1) (let _18 (byte buf (const 16 8)) (let _19 (or _17 (shl (zext 64 (and _18 (const 8 127))) (const 64 56))) (ite (ult _18 (const 8 128)) (ite (any (all true (eq _18 (const 8 0))) (all false (ugt _18 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _19 (const 8 9))) (ite (ult (const 16 9) _1) (let _20 (byte buf (const 16 9)) (let _21 (or _19 (shl (zext 64 (and _20 (const 8 127))) (const 64 63))) (ite (ult _20 (const 8 128)) (ite (any (all true (eq _20 (const 8 0))) (all true (ugt _20 (const 8 1)))) (none (option (bv 64) (bv 8))) (some (option (bv 64) (bv 8)) _21 (const 8 10))) (none (option (bv 64) (bv 8)))))) (none (option (bv 64) (bv 8))))))) (none (option (bv 64) (bv 8))))))) (none (option (bv 64) (bv 8))))))) (none (option (bv 64) (bv 8))))))) (none (option (bv 64) (bv 8))))))) (none (option (bv 64) (bv 8))))))) (none (option (bv 64) (bv 8))))))) (none (option (bv 64) (bv 8))))))) (none (option (bv 64) (bv 8))))))) (none (option (bv 64) (bv 8)))))))",
+    "forma_fuente": "8fbdf171bac8a2440c2bb2dd66dc7d4c94c4b5f05a604ddf414c0b90e52180a1",
+    "fuente": "(candidate varint_decode-lang (implements varint-decode) (body (let ((result.1 (bv 64 0))) (let (($hi.2.3 (ite (ult (len buf) (bv 16 10)) (len buf) (bv 16 10)))) (ite (ult (bv 16 0) $hi.2.3) (let ((b.4 (byte buf (bv 16 0)))) (let ((result.5 (or result.1 (shl (zext 64 (and b.4 (bv 8 127))) (bv 64 0))))) (ite (ult b.4 (bv 8 128)) (ite (any (all false (eq b.4 (bv 8 0))) (all false (ugt b.4 (bv 8 1)))) none (some result.5 (bv 8 1))) (ite (ult (bv 16 1) $hi.2.3) (let ((b.6 (byte buf (bv 16 1)))) (let ((result.7 (or result.5 (shl (zext 64 (and b.6 (bv 8 127))) (bv 64 7))))) (ite (ult b.6 (bv 8 128)) (ite (any (all true (eq b.6 (bv 8 0))) (all false (ugt b.6 (bv 8 1)))) none (some result.7 (bv 8 2))) (ite (ult (bv 16 2) $hi.2.3) (let ((b.8 (byte buf (bv 16 2)))) (let ((result.9 (or result.7 (shl (zext 64 (and b.8 (bv 8 127))) (bv 64 14))))) (ite (ult b.8 (bv 8 128)) (ite (any (all true (eq b.8 (bv 8 0))) (all false (ugt b.8 (bv 8 1)))) none (some result.9 (bv 8 3))) (ite (ult (bv 16 3) $hi.2.3) (let ((b.10 (byte buf (bv 16 3)))) (let ((result.11 (or result.9 (shl (zext 64 (and b.10 (bv 8 127))) (bv 64 21))))) (ite (ult b.10 (bv 8 128)) (ite (any (all true (eq b.10 (bv 8 0))) (all false (ugt b.10 (bv 8 1)))) none (some result.11 (bv 8 4))) (ite (ult (bv 16 4) $hi.2.3) (let ((b.12 (byte buf (bv 16 4)))) (let ((result.13 (or result.11 (shl (zext 64 (and b.12 (bv 8 127))) (bv 64 28))))) (ite (ult b.12 (bv 8 128)) (ite (any (all true (eq b.12 (bv 8 0))) (all false (ugt b.12 (bv 8 1)))) none (some result.13 (bv 8 5))) (ite (ult (bv 16 5) $hi.2.3) (let ((b.14 (byte buf (bv 16 5)))) (let ((result.15 (or result.13 (shl (zext 64 (and b.14 (bv 8 127))) (bv 64 35))))) (ite (ult b.14 (bv 8 128)) (ite (any (all true (eq b.14 (bv 8 0))) (all false (ugt b.14 (bv 8 1)))) none (some result.15 (bv 8 6))) (ite (ult (bv 16 6) $hi.2.3) (let ((b.16 (byte buf (bv 16 6)))) (let ((result.17 (or result.15 (shl (zext 64 (and b.16 (bv 8 127))) (bv 64 42))))) (ite (ult b.16 (bv 8 128)) (ite (any (all true (eq b.16 (bv 8 0))) (all false (ugt b.16 (bv 8 1)))) none (some result.17 (bv 8 7))) (ite (ult (bv 16 7) $hi.2.3) (let ((b.18 (byte buf (bv 16 7)))) (let ((result.19 (or result.17 (shl (zext 64 (and b.18 (bv 8 127))) (bv 64 49))))) (ite (ult b.18 (bv 8 128)) (ite (any (all true (eq b.18 (bv 8 0))) (all false (ugt b.18 (bv 8 1)))) none (some result.19 (bv 8 8))) (ite (ult (bv 16 8) $hi.2.3) (let ((b.20 (byte buf (bv 16 8)))) (let ((result.21 (or result.19 (shl (zext 64 (and b.20 (bv 8 127))) (bv 64 56))))) (ite (ult b.20 (bv 8 128)) (ite (any (all true (eq b.20 (bv 8 0))) (all false (ugt b.20 (bv 8 1)))) none (some result.21 (bv 8 9))) (ite (ult (bv 16 9) $hi.2.3) (let ((b.22 (byte buf (bv 16 9)))) (let ((result.23 (or result.21 (shl (zext 64 (and b.22 (bv 8 127))) (bv 64 63))))) (ite (ult b.22 (bv 8 128)) (ite (any (all true (eq b.22 (bv 8 0))) (all true (ugt b.22 (bv 8 1)))) none (some result.23 (bv 8 10))) none))) none)))) none)))) none)))) none)))) none)))) none)))) none)))) none)))) none)))) none)))))",
+    "id": "bc1cc0afedbcdc579c7da8fbe29758a842d6bfdfd00c40ffefcc0a4e1186736d",
+    "ranura": "9efbca29dd66c9788454c1f560657eed61495cae559d2d06101667b63b3441e0",
+    "semantica": "efch-0.1"
+   }
+  }
+ }
+}

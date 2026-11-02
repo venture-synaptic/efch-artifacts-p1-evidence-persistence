@@ -1,0 +1,8 @@
+; EXP-019 KP2-doc, candidatas (fase 0). Generado por experimentos/exp019/generar.py; no editar.
+(efch 0.1
+  (candidate c0 (implements f)
+    (body (xor x 1)))
+  (candidate c1 (implements f)
+    (body (or (xor x 1) 0)))
+  (candidate c2 (implements f)
+    (body (xor (xor (xor x 1) 1) 1))))

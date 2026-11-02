@@ -1,0 +1,8 @@
+; EXP-019 T-w3-llamada-neq, candidatas (fase 0). Generado por experimentos/exp019/generar.py; no editar.
+(efch 0.1
+  (candidate c0 (implements f)
+    (body (call h x)))
+  (candidate c1 (implements f)
+    (body (add 0 (call h x))))
+  (candidate c2 (implements f)
+    (body (sub (add (call h x) 1) 1))))

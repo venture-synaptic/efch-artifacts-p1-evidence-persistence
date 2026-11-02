@@ -1,0 +1,24 @@
+{
+ "ancho": 5,
+ "cambio": "neq",
+ "candidatas": {
+  "c0": "(xor x 1)",
+  "c1": "(or (xor x 1) 0)",
+  "c2": "(xor (xor (xor x 1) 1) 1)"
+ },
+ "contaminada": false,
+ "cuerpo": "xor1",
+ "cuerpos_antes": {
+  "f": "(xor x 1)",
+  "h": "x",
+  "q": "0"
+ },
+ "cuerpos_despues": {
+  "f": "(xor (xor x 1) 1)",
+  "h": "x",
+  "q": "0"
+ },
+ "doc_f_despues": null,
+ "evoluciona": "f",
+ "id": "P-w5-xor1-neq"
+}

@@ -1,0 +1,69 @@
+{
+ "alcance": "la selección por `orden` entre dos certificados válidos (se registra cuál elige); no puede detectar la elección de uno inválido",
+ "calibracion_B": {
+  "intervencion": [
+   "fase 0 de B en P; copia a Q; mutación de Q/cache-B.json (JSON determinista); comprobación del diff; fase 1 de B en un subproceso nuevo que carga Q",
+   "KB4 invierte exclusivamente el orden de entradas de `cache-B.json`, sin añadir ni mutar campos `segundos`; exige las mismas claves, aciertos, estados y `n_B` que el gemelo"
+  ],
+  "ramas": {
+   "fallo (calibración de B)": [
+    "cualquier diferencia"
+   ],
+   "inconcluso (no superado)": [
+    "intervención no aplicada",
+    "error del arnés"
+   ],
+   "superado": [
+    "mismas claves, aciertos, estados y n_B que el gemelo en B"
+   ]
+  }
+ },
+ "cambio": "q",
+ "codigos_admitidos": null,
+ "condicion": "C (y B como calibración)",
+ "familia": "cambio de etiqueta",
+ "fase0_extra": [
+  "realize(c0) otra vez tras c2 (segundo certificado elegible)"
+ ],
+ "gemelo": "T-w3-inc-q",
+ "id": "K4-costes",
+ "intervencion": {
+  "fase": "clon tras la fase 0",
+  "mutacion": [
+   "Q/costes.json: cada `segundos` numérico × 1000; `orden` reflejado (o' = max + min - o) en todo el archivo, de modo que se invierte el orden relativo de los dos certificados de REAL(c0, f_a)"
+  ],
+  "procedimiento": [
+   "fase 0 en un almacén nuevo P (subproceso 1); P se conserva intacto como evidencia",
+   "shutil.copytree(P, Q)",
+   "mutación sobre los archivos de Q (campo `mutacion`), escrita por el mutador sin usar efch: los objetos contractuales en la forma canónica de la v2.7 §2.1; costes.json (y la caché de B) en JSON determinista con claves ordenadas, floats finitos y tuplas como arrays",
+   "comprobación de la intervención: releer Q; el diff de sha256 de todo Q frente a P es exactamente el previsto",
+   "foto de integridad (disco) de Q después de la mutación y antes de la fase 1",
+   "fase 1 en un subproceso nuevo con Store(Q) nuevo"
+  ]
+ },
+ "precondiciones_de_activacion": [
+  "Q contiene exactamente dos certificados distintos de la afirmación REAL(c0, f_a), directa, probado, de instantáneas distintas, ambos vigentes en S_d según el contraste, con `orden` distinto",
+  "la mutación invirtió su orden relativo (diff exacto)",
+  "Store(Q) creado después"
+ ],
+ "ramas": {
+  "fallo (refuta R1)": [
+   "cualquier diferencia en un invariante",
+   "REAL(c0, f_d) no `conservada` o desde un certificado que no sea uno de los dos"
+  ],
+  "inconcluso (no superado)": [
+   "falla una precondición de activación",
+   "alguna obligación inconclusa",
+   "error del arnés"
+  ],
+  "parada global": [
+   "modificación parcial inesperada (monitor D11)"
+  ],
+  "superado": [
+   "estado, origen y regla de cada obligación de O(S_d), iguales a los del gemelo",
+   "clase y conjunto de componentes de base de cada certificado de S_d, iguales",
+   "n_C de la fase 1, igual",
+   "cero V1/V2; monitor sin modificación parcial"
+  ]
+ }
+}

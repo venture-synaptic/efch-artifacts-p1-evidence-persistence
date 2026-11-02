@@ -1,0 +1,17 @@
+; EXP-019 P-w6-neg-neq, antes (S_a). Generado por experimentos/exp019/generar.py; no editar.
+(efch 0.1
+  (computation h
+    (input x (bv 6))
+    (output (bv 6))
+    (semantics x)
+    (budget (llm-calls 0) (llm-usd 0) (smt-seconds 120)))
+  (computation q
+    (input x (bv 6))
+    (output (bv 6))
+    (semantics 0)
+    (budget (llm-calls 0) (llm-usd 0) (smt-seconds 120)))
+  (computation f
+    (input x (bv 6))
+    (output (bv 6))
+    (semantics (neg x))
+    (budget (llm-calls 0) (llm-usd 0) (smt-seconds 120))))

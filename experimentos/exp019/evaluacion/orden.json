@@ -1,0 +1,2944 @@
+{
+ "controles": [
+  "K1-nota",
+  "K2-doc",
+  "K3-nombres-de-obligacion",
+  "K4-costes",
+  "K5-ausencia-de-clase",
+  "K6-contradiccion-de-clase",
+  "K7-ausencia-de-herramienta",
+  "K8-contradiccion-de-herramienta"
+ ],
+ "generador": "random.Random(semilla).shuffle, una vez por repetición, en orden",
+ "intercalado": "cuadrado latino ABC/BCA/CAB según la posición mod 3; controles: B (calibración) y C, salvo K3/KP3, solo C",
+ "repeticiones": [
+  {
+   "repeticion": 1,
+   "secuencia": [
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-id-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-id-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-cero-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-llamada-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-inc-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-cero-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-id-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-inc-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-id-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K6-contradiccion-de-clase"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-cero-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-id-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-cero-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-id-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-cero-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-inc-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-llamada-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-inc-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-id-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-inc-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K7-ausencia-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K5-ausencia-de-clase"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-id-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-cero-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-inc-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-cero-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-inc-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-cero-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-id-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-inc-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-cero-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-inc-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K8-contradiccion-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-id-q"
+    },
+    {
+     "condiciones": [
+      "C"
+     ],
+     "entrada": "K3-nombres-de-obligacion"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-inc-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-cero-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-id-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-id-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-cero-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K4-costes"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-llamada-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-inc-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-inc-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-cero-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K1-nota"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K2-doc"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-inc-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-inc-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-inc-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-id-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-llamada-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-cero-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-cero-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-cero-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-id-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-inc-h"
+    }
+   ]
+  },
+  {
+   "repeticion": 2,
+   "secuencia": [
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-inc-h"
+    },
+    {
+     "condiciones": [
+      "C"
+     ],
+     "entrada": "K3-nombres-de-obligacion"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-cero-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-inc-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-id-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-cero-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-id-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-id-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-cero-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-inc-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-id-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-inc-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-cero-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-llamada-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-id-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-inc-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-cero-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-id-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-id-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-inc-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K6-contradiccion-de-clase"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-llamada-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-id-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-inc-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-cero-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-llamada-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-cero-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-inc-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-id-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K1-nota"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-inc-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K2-doc"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-cero-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-id-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-cero-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K7-ausencia-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-id-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-inc-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-cero-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-id-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-cero-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K4-costes"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K8-contradiccion-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-id-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-inc-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-id-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-cero-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-inc-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-inc-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-cero-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-inc-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-inc-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-inc-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-id-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K5-ausencia-de-clase"
+    }
+   ]
+  },
+  {
+   "repeticion": 3,
+   "secuencia": [
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-id-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-inc-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-cero-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-inc-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-inc-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-inc-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-id-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-inc-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-cero-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-id-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-llamada-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-cero-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K7-ausencia-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K6-contradiccion-de-clase"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-id-neq"
+    },
+    {
+     "condiciones": [
+      "C"
+     ],
+     "entrada": "K3-nombres-de-obligacion"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-inc-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-inc-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-cero-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-cero-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K5-ausencia-de-clase"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-id-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-inc-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K8-contradiccion-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-id-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-cero-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-cero-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-id-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-cero-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-id-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-inc-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K4-costes"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-llamada-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K1-nota"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-id-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-inc-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-cero-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-llamada-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-inc-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-id-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-id-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-inc-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-cero-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-inc-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-inc-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-id-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-llamada-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-cero-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-cero-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-id-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-inc-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K2-doc"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-cero-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-cero-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-inc-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-h"
+    }
+   ]
+  },
+  {
+   "repeticion": 4,
+   "secuencia": [
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-inc-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K1-nota"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-inc-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-inc-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K6-contradiccion-de-clase"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-cero-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-inc-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-cero-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K5-ausencia-de-clase"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-cero-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-cero-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-cero-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-id-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-id-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-inc-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-h"
+    },
+    {
+     "condiciones": [
+      "C"
+     ],
+     "entrada": "K3-nombres-de-obligacion"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-llamada-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-llamada-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-id-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-cero-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-id-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-llamada-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-inc-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-id-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-cero-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K7-ausencia-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-id-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-inc-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-cero-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K2-doc"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-id-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-id-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-inc-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-cero-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-id-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-cero-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-id-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-id-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-inc-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-inc-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-llamada-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-inc-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-inc-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-id-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-inc-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-cero-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-inc-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-cero-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-id-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-inc-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-llamada-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-cero-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-id-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-inc-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K4-costes"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K8-contradiccion-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-eq"
+    }
+   ]
+  },
+  {
+   "repeticion": 5,
+   "secuencia": [
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-inc-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-cero-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-llamada-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-inc-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K4-costes"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K5-ausencia-de-clase"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-id-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-id-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-llamada-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-id-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-cero-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-inc-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-id-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K7-ausencia-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K1-nota"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-id-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-id-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-cero-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-id-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w1-inc-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-cero-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-inc-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-cero-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-id-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K6-contradiccion-de-clase"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-inc-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-inc-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-cero-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-inc-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-inc-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-q"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-id-neq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-id-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-id-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K2-doc"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-llamada-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-cero-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-id-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-inc-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-llamada-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-inc-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-cero-eq"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w2-inc-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-id-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-cero-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-cero-q"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w4-inc-eq"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w1-id-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-llamada-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-cero-eq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C"
+     ],
+     "entrada": "K8-contradiccion-de-herramienta"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w4-cero-h"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w3-cero-h"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w4-id-h"
+    },
+    {
+     "condiciones": [
+      "A",
+      "B",
+      "C"
+     ],
+     "entrada": "T-w3-inc-neq"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w2-cero-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w3-inc-h"
+    },
+    {
+     "condiciones": [
+      "C"
+     ],
+     "entrada": "K3-nombres-de-obligacion"
+    },
+    {
+     "condiciones": [
+      "B",
+      "C",
+      "A"
+     ],
+     "entrada": "T-w1-cero-q"
+    },
+    {
+     "condiciones": [
+      "C",
+      "A",
+      "B"
+     ],
+     "entrada": "T-w2-inc-neq"
+    }
+   ]
+  }
+ ],
+ "semilla": 20261101,
+ "timeout_smt_s": 120,
+ "transiciones": [
+  "T-w1-id-q",
+  "T-w1-id-eq",
+  "T-w1-id-neq",
+  "T-w1-id-h",
+  "T-w1-cero-q",
+  "T-w1-cero-eq",
+  "T-w1-cero-neq",
+  "T-w1-cero-h",
+  "T-w1-inc-q",
+  "T-w1-inc-eq",
+  "T-w1-inc-neq",
+  "T-w1-inc-h",
+  "T-w1-llamada-q",
+  "T-w1-llamada-eq",
+  "T-w1-llamada-neq",
+  "T-w1-llamada-h",
+  "T-w2-id-q",
+  "T-w2-id-eq",
+  "T-w2-id-neq",
+  "T-w2-id-h",
+  "T-w2-cero-q",
+  "T-w2-cero-eq",
+  "T-w2-cero-neq",
+  "T-w2-cero-h",
+  "T-w2-inc-q",
+  "T-w2-inc-eq",
+  "T-w2-inc-neq",
+  "T-w2-inc-h",
+  "T-w2-llamada-q",
+  "T-w2-llamada-eq",
+  "T-w2-llamada-neq",
+  "T-w2-llamada-h",
+  "T-w3-id-q",
+  "T-w3-id-eq",
+  "T-w3-id-neq",
+  "T-w3-id-h",
+  "T-w3-cero-q",
+  "T-w3-cero-eq",
+  "T-w3-cero-neq",
+  "T-w3-cero-h",
+  "T-w3-inc-q",
+  "T-w3-inc-eq",
+  "T-w3-inc-neq",
+  "T-w3-inc-h",
+  "T-w3-llamada-q",
+  "T-w3-llamada-eq",
+  "T-w3-llamada-neq",
+  "T-w3-llamada-h",
+  "T-w4-id-q",
+  "T-w4-id-eq",
+  "T-w4-id-neq",
+  "T-w4-id-h",
+  "T-w4-cero-q",
+  "T-w4-cero-eq",
+  "T-w4-cero-neq",
+  "T-w4-cero-h",
+  "T-w4-inc-q",
+  "T-w4-inc-eq",
+  "T-w4-inc-neq",
+  "T-w4-inc-h",
+  "T-w4-llamada-q",
+  "T-w4-llamada-eq",
+  "T-w4-llamada-neq",
+  "T-w4-llamada-h"
+ ]
+}

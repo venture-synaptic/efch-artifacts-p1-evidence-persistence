@@ -1,0 +1,122 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,margin=1.75cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array}
+\usepackage{xcolor,hyperref,graphicx}
+\usepackage{enumitem}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black,citecolor=blue!50!black}
+\setlength{\columnsep}{0.65cm}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{2pt}
+\newcommand{\efch}{\textsc{EFCH}}
+\title{\bfseries Safe Reuse Is Not Enough: A Controlled Comparison of Semantic Evidence Persistence, Full Reverification, and Strengthened Memoization}
+\author{Erik Fisher Cueva Huari\\\small Independent Researcher, VentureSynaptic Labs, Peru\\\small ORCID: \href{https://orcid.org/0000-0001-7268-5510}{0000-0001-7268-5510}}
+\date{Draft manuscript --- 1 November 2026 \\ \small Not peer reviewed; not yet submitted}
+\begin{document}\maketitle
+\begin{abstract}
+Persisting formal evidence across software revisions promises to avoid repeated verification while preserving the validity of earlier results. Whether a semantically informed evidence store offers an advantage over ordinary query memoization, however, requires a matched comparison rather than a full-recomputation baseline alone. We report EXP-019, a pre-specified and internally audited controlled experiment on a deliberately bounded bit-vector domain. Three conditions process the same 64 revision transitions: full reverification (A), strengthened SMT-query memoization (B), and an implemented semantic evidence store (C). The primary outcome is actual solver invocations during revision processing, not elapsed time. Condition C uses 252 invocations versus 576 for A (56.25\% fewer), but 96 for B (2.625 times as many). Eight adversarial controls passed for C; all 576 target obligations were decided and no confirmed invalid evidence reuse was observed in the tested domain. The store performed better than B only for the equivalent-change stratum (32 versus 40 invocations). A subsequent, explicitly exploratory hybrid prototype reduced some calls but increased wall-clock cost and exposed implementation defects. These results support bounded safe reuse and savings against full reverification, but do not support an overall efficiency advantage over a strong conventional incremental baseline. We provide the protocol, measurement boundary, audit trail, and limitations to make this negative result independently assessable.
+\end{abstract}
+\noindent\textbf{Keywords:} incremental verification; SMT; evidence reuse; memoization; negative results; software evolution; reproducibility.
+
+\section{Introduction}
+Verification results are often sensitive to changes in program versions, definitions, dependencies, and toolchains. Reusing a result requires more than establishing that its conclusion happens to remain true: the evidence must still be applicable to the revised artifact. Evidence stores can track revision identity, causal dependencies and provenance, but this machinery also introduces costs. Moreover, standard caching can already avoid repeat SMT queries. The scientific question is thus comparative: what efficiency benefit, if any, is attributable to semantic evidence management beyond an appropriately strengthened cache?
+
+EXP-019 is an experiment within the \efch{} research program on property-oriented software engineering. It tests a concrete implementation rather than the broader paradigm or its language. Our contributions are (i) an explicit distinction between semantic truth and contractual evidence validity, (ii) a three-condition matched comparison with a strong query-cache baseline, (iii) an internally audited negative result with stratum-level analysis, and (iv) an account of subsequent exploratory checks without treating them as confirmatory evidence. We make no claim of a new verification algorithm or general superiority.
+
+\section{Background and Related Work}
+Incremental computation and memoization have a substantial history; dependency tracking and cached computation can avoid recomputing unchanged work \cite{acar2006}. SMT solvers such as Z3 provide automated checking of formulas including finite-width bit-vectors \cite{demoura2008}. Evaluation of software engineering interventions benefits from explicit questions, controlled alternatives and documented threats to validity \cite{wohlin2012}. In contrast to a full treatment of the extensive incremental-verification literature, this draft restricts its contextual claims to these directly relevant foundations; a systematic comparison to current proof-caching, incremental SMT and verification artifact reuse systems remains necessary before journal submission.
+
+Here, the distinction is operational. A query cache B recognizes equivalent serialized SMT queries under a fixed normalization and tool-base descriptor. The evidence store C additionally manages certificates and revision-aware applicability rules; it uses equality proofs and transfer rules where appropriate. Those additional guarantees should be assessed independently of their computational price.
+
+\section{Research Questions and Experimental Design}
+\subsection{Research questions}
+We distinguish three pre-specified outcomes:
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[R1: safety.] Does C decide the required obligations without confirmed semantically incorrect or contractually stale evidence reuse, and pass eight targeted controls?
+\item[R2: savings over A.] Does C use fewer actual SMT solver invocations than full reverification?
+\item[R3: differential efficiency.] Does C outperform strengthened memoization B on the primary solver-call measure?
+\end{description}
+None of these logically implies another. R1 pertains to the bounded implementation and corpus, not a proof of general store correctness.
+
+\subsection{Domain and revisions}
+The evaluation uses a total, small bit-vector core with one input and output of width $w\in\{1,2,3,4\}$. Expressions use literals, the input variable, addition, subtraction and function calls. Each initial state contains functions $h=x$, $q=0$, and $f=B$, with three candidates for $f$: $c_0=B$, $c_1=0+B$, and $c_2=(B+1)-1$. The body $B$ is selected from identity, zero, increment and a call to $h$. Changes affect unrelated $q$ or $h$, replace $f$ with a constructed equivalent expression, replace it with a non-equivalent expression, or alter a dependency. The deterministic grid yields 64 transitions; eight additional controls make 72 evaluation entries. A separate 40-entry preparation collection was used for instrument development and calibration. The evaluation is a designed microbenchmark, not a representative sample of industrial repositories.
+
+Each destination state $S_d$ has nine target obligations: well-definedness for $f$, $h$, $q$ and three candidates, plus three realization claims comparing the candidates with $f$. Hence the 64 transitions contain $64\cdot9=576$ target obligations. The claim that these nine are sufficient is restricted to this constructed model.
+
+\subsection{Conditions and parity}
+\textbf{A---full reverification:} independently checks the nine destination obligations without retaining verification results. \textbf{B---strengthened memoization:} executes the same destination procedure as A but wraps the original SMT proving routine with a cache of queries. Input variables are renamed positionally while preserving sorts; the query key includes normalized serialized assertions and a canonical descriptor of the tool base. It does not simplify or algebraically canonicalize expressions. Only decided proven/refuted outcomes are cached; counterexamples are remapped and reconfirmed. B does not perform inter-version equivalence checking. \textbf{C---semantic evidence persistence:} performs revision evolution with its existing evidence store, revalidation, equality certificates and guarded transfers; it is evaluated without algorithmic optimization for this experiment.
+
+All arms use matching inputs, a fixed base descriptor, offline operation, the same Z3 setup, and the same nine obligations. Condition A sees the destination; B and C also see the source and setup-phase artifacts. Initial setup is measured separately from the primary phase-1 outcome. C and B intentionally differ in the representations and algorithms used; therefore the experiment tests these implemented conditions, not an isolated causal effect of one data structure.
+
+\subsection{Primary outcome, controls and audit}
+The primary metric $N_X=\sum_{i=1}^{64}n_X(i)$ counts effective invocations of the underlying proving routine in phase 1, one solver check per invocation, after cache hits. A separate counter over \texttt{z3.Solver.check} checks this accounting. The experiment prescribes five repeated runs per condition/transition, fixed seeded ordering, and consistency of solver counts and verdicts between repetitions. Runtime, CPU, setup cost, memory and storage are distinct from the pre-specified primary metric; solver-call savings cannot be interpreted as equivalent wall-clock savings.
+
+The validity criterion for a reused certificate checks that subjects refer to the correct revisions, causal closure belongs to the destination, and the relevant tool base and transfer premises are current. Stale evidence counts as contractually invalid even when its conclusion remains accidentally true. Semantic conclusions are separately checked against an oracle and interpreter. Eight adversarial controls probe irrelevant note/doc changes, misleading labels, alternative valid certificates and intentionally malformed certificate content or base descriptors. The recorded evaluation reports a separate internal audit by an agent designated Codex Sol, including recomputation from underlying cells and one complete repeated execution. This is a valuable procedural check but \emph{not} independent peer review by an unaffiliated researcher.
+
+\section{Results}
+\begin{table}[t]
+\centering\caption{Actual phase-1 solver calls in EXP-019. Lower is better.}\label{tab:main}
+\begin{tabular}{lrrr}\toprule
+Scope & A & B & C\\\midrule
+64 transitions & 576 & 96 & 252\\
+61 non-flagged transitions & 549 & 86 & 233\\
+\bottomrule\end{tabular}
+\end{table}
+
+\subsection{Safety and completeness (R1)}
+All 576 target obligations were decided in the reported evaluation; the recorded outcome also includes 64 equivalence checks and 48 refutations. The eight controls passed. No confirmed contractual reuse violation, semantic contradiction, undecided result or calibration failure was reported. Consequently R1 was sustained \emph{within this domain and its tested controls}; this is not evidence of soundness for arbitrary languages, long histories or changed tool bases.
+
+\subsection{Full recomputation and memoization (R2--R3)}
+Table~\ref{tab:main} gives the primary totals. Relative to A, the store uses
+\begin{equation}\label{eq:r2}
+\rho_A=\frac{252}{576}=0.4375,
+\end{equation}
+which is a 56.25\% reduction in solver calls. Relative to the stronger comparator B,
+\begin{equation}\label{eq:r3}
+\rho_B=\frac{252}{96}=2.625,
+\end{equation}
+so C incurs 156 additional checks, or a 162.5\% increase relative to B. Restricting the comparison to 61 non-flagged transitions yields $233/86\approx2.709$, preserving the qualitative result. R2 was sustained and the hypothesized overall superiority in R3 was refuted for this implementation.
+
+\begin{table}[t]
+\centering\caption{Reported phase-1 calls by change stratum, B versus C.}\label{tab:strata}
+\begin{tabular}{lrr}\toprule
+Stratum & B & C\\\midrule
+Unrelated & 0 & 56\\
+Equivalent & 40 & 32\\
+Non-equivalent & 40 & 128\\
+Dependency & 16 & 36\\\midrule
+Total & 96 & 252\\\bottomrule\end{tabular}
+\end{table}
+
+Table~\ref{tab:strata} reveals a localized advantage: C uses eight fewer calls than B in equivalent revisions. This does not reverse the global comparison. The memoization comparator's observed total of 96 also improved upon a pre-execution prediction of 116. The recorded explanation is that Z3's \texttt{sexpr()} may serialize associatively different ASTs identically; the prediction's converse assumption about textual identity did not hold. This discrepancy was retained rather than adjusting the test post hoc.
+
+\subsection{Interpretation of the negative result}
+The measured outcome does not mean that persistence is incorrect or useless. It shows that, under the tested workload and primary cost definition, conventional caching avoids more solver work than the implemented store. Neither the question ``can evidence be safely reused?'' nor the question ``does persistence reduce work compared to no reuse?'' substitutes for the comparative question ``does it outperform a strong incremental baseline?''
+
+\section{Post-Experiment Exploratory Follow-up}
+After EXP-019 was closed, hybrid prototypes P0 and P1 were built on \emph{already known} cases: the 72 evaluation entries and 40 preparation entries, now all treated as development data. Thus their measurements cannot confirm a new preregistered claim. P0 strengthened a conventional cache with affine normalization and typed decisions; P1 added a selective mechanism for reusing evidence under residual claims.
+
+The exploration reports 22 activated entries and a reduction from 72 to 44 phase-1 calls on the preparation subset, but paired wall-clock measurements across the known 112-entry set found $\Delta T=T_{P1}-T_{P0}=+0.514$ seconds per entry (reported bootstrap 95\% interval [0.510, 0.519]). P1 used more memory and stored state. Subsequent internal audit identified three additional defects: incomplete causal versioning of certificate bases, a non-atomic publication failure path, and redundant reattempts under exhausted budgets. The source record also cautions that P0 and P1 were not a pure matched ablation. These exploratory observations illustrate why fewer solver calls need not imply lower total cost or stronger end-to-end correctness. They are not pooled with the confirmatory EXP-019 results.
+
+\section{Threats to Validity}
+\textbf{Construct validity.} Solver invocations are a precise proxy for one resource, not engineering cost, latency, human effort or proof quality. The current paper reports no aggregate confirmatory timing effect. An always-true well-definedness condition and tiny fixed-width formulas create a ceiling effect. \textbf{Internal validity.} The experimental arms share inputs and measurement instrumentation, but C follows its own revision order, unlike A and B, and carries a richer certificate workflow. An arm-level comparison cannot isolate a single mechanism. The original B call prediction was inaccurate; the discrepancy is disclosed. \textbf{External validity.} Programs are synthetic, changes small, the base fixed, and widths restricted to 1--4 bits. Property changes, persisted refutations, generated C, realistic dependency graphs, long evolution histories, and heterogeneous solvers were not evaluated. \textbf{Reliability.} The design uses frozen protocols, hashes, audit evidence and repetition; however, this manuscript has not itself rerun the original artifacts, and its numbers were transcribed from the experiment's recorded results. Agent-conducted auditing is not equivalent to independent institutional replication. \textbf{Integrity defects.} The project explicitly leaves positional concern D10 untested and D11 avoided by construction; neither is considered resolved by this experiment. The later P1 audit exposed further versioning and atomicity issues.
+
+\section{Reproducibility and Data Availability}
+The research repository is private and maintained at \url{https://github.com/venture-synaptic/efch-research}; this link does not provide public access to the code or experimental data. The original report is \texttt{docs/experimentos/EXP-019-resultados.md}; the experiment protocol is \texttt{docs/experimentos/EXP-019.md}; the follow-up report is \texttt{docs/exploracion/semantic-store-hibrido-P0P1.md}. The recorded protocol and instrument tags are \texttt{exp019-protocolo} (\texttt{d94471a}) and \texttt{exp019-instrumento} (\texttt{4aa18a7}). The raw evaluation and internal audit are documented as residing on branch \texttt{preparacion/exp019} under \texttt{resultados/exp019/}; this branch and the complete raw dataset are not presently released as a public reproducibility package. The project report records a JSONL digest beginning \texttt{59c354f3} and analysis digest beginning \texttt{82e684e7}; these partial identifiers are \emph{not} sufficient to verify artifacts. A sanitized, independently reproducible archive with full hashes should be released and its DOI added before making public reproducibility claims.
+
+\section{Research Ethics, Authorship and AI Disclosure}
+Erik Fisher Cueva Huari is listed as the responsible human author. The source records describe use of Claude Opus to implement and coordinate portions of the instrument and prototypes, and Codex Sol for internal technical auditing, under the author's direction. AI systems are not listed as coauthors. The human author must check all factual statements, analysis, citations and source provenance before submission. This manuscript was itself drafted with AI assistance and has not yet received independent human subject-matter review. No external funding is claimed in this draft; funding and competing-interest disclosures require author confirmation.
+
+\section{Conclusion}
+In a pre-specified 64-transition synthetic experiment, the \efch{} evidence store reused verification evidence without observed invalid transfers in the tested domain and reduced actual solver invocations by 56.25\% against full reverification. However, it required 2.625 times the calls of strengthened conventional memoization and only outperformed that cache on the equivalent-change subset. This is a bounded, negative finding on differential efficiency---not a refutation of semantic persistence in general. Future claims should be tested against comparators with equivalent guarantees and optimizations and should include end-to-end cost, changed tool bases, realistic histories and independent replication.
+
+\section*{Acknowledgments}
+Acknowledgments and any institutional permissions should be confirmed by the human author before release.
+\begin{thebibliography}{9}
+\bibitem{acar2006} U. A. Acar, G. E. Blelloch, M. Blume, and K. Tangwongsan. An experimental analysis of self-adjusting computation. In \emph{Proceedings of PLDI}, 2006.
+\bibitem{demoura2008} L. de Moura and N. Bj\o rner. Z3: An efficient SMT solver. In \emph{TACAS}, pp. 337--340, 2008. DOI: 10.1007/978-3-540-78800-3\_24.
+\bibitem{wohlin2012} C. Wohlin, P. Runeson, M. H\"ost, M. C. Ohlsson, B. Regnell, and A. Wessl\'en. \emph{Experimentation in Software Engineering}. Springer, 2012. DOI: 10.1007/978-3-642-29044-2.
+\end{thebibliography}
+\end{document}

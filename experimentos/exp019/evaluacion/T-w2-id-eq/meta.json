@@ -1,0 +1,24 @@
+{
+ "ancho": 2,
+ "cambio": "eq",
+ "candidatas": {
+  "c0": "x",
+  "c1": "(add 0 x)",
+  "c2": "(sub (add x 1) 1)"
+ },
+ "contaminada": true,
+ "cuerpo": "id",
+ "cuerpos_antes": {
+  "f": "x",
+  "h": "x",
+  "q": "0"
+ },
+ "cuerpos_despues": {
+  "f": "(add x 0)",
+  "h": "x",
+  "q": "0"
+ },
+ "doc_f_despues": null,
+ "evoluciona": "f",
+ "id": "T-w2-id-eq"
+}

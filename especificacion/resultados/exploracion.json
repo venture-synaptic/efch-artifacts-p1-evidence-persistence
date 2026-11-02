@@ -1,0 +1,708 @@
+{
+ "base": {
+  "aceptados": {
+   "R-PROP": 1902,
+   "R-REAL": 154,
+   "R-REFUT": 762,
+   "conservacion": 273
+  },
+  "contraejemplos": [],
+  "intentos": 422545,
+  "mundos": 1476,
+  "n_contraejemplos": 0,
+  "rechazados": {
+   "R-PROP:contexto_no_fijo": 236196,
+   "R-PROP:fuente_distinta": 52,
+   "R-PROP:no_vigente": 13644,
+   "R-PROP:premisa_ausente": 2352,
+   "R-PROP:premisa_clase": 51591,
+   "R-PROP:premisa_estado": 45540,
+   "R-PROP:premisa_sobrante": 748,
+   "R-PROP:ranura_nueva": 1402,
+   "R-PROP:tipo_invalido": 3141,
+   "R-REAL:candidata_distinta": 1419,
+   "R-REAL:contexto_no_fijo": 10808,
+   "R-REAL:no_vigente": 2912,
+   "R-REAL:premisa_ausente": 715,
+   "R-REAL:premisa_clase": 14411,
+   "R-REAL:premisa_estado": 8693,
+   "R-REAL:tipo_invalido": 476,
+   "R-REFUT:candidata_distinta": 330,
+   "R-REFUT:contexto_no_fijo": 6520,
+   "R-REFUT:evaluacion_no_directa": 132,
+   "R-REFUT:no_vigente": 1644,
+   "R-REFUT:premisa_ausente": 768,
+   "R-REFUT:premisa_clase": 13906,
+   "R-REFUT:testigo_distinto": 458,
+   "R-REFUT:tipo_invalido": 822,
+   "conservacion:fuente_distinta": 12,
+   "conservacion:premisa_ausente": 732,
+   "conservacion:ranura_nueva": 30
+  },
+  "relajar": []
+ },
+ "relajaciones": {
+  "base": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [],
+   "n_contraejemplos": 0
+  },
+  "candidata": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 780,
+    "conservacion": 273
+   },
+   "ejemplo": [],
+   "n_contraejemplos": 0
+  },
+  "candidata+cobertura": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 160,
+    "R-REFUT": 780,
+    "conservacion": 273
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "REAL",
+     "antes": {
+      "c": "h",
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "despues": {
+      "c": "h",
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       1,
+       1
+      ],
+      "pred": "g=0"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "eq",
+      "origen",
+      "wd_a",
+      "wd_c"
+     ],
+     "regla": "R-REAL",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 5
+  },
+  "cierre": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [],
+   "n_contraejemplos": 0
+  },
+  "cobertura": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [],
+   "n_contraejemplos": 0
+  },
+  "contexto": {
+   "aceptados": {
+    "R-PROP": 4545,
+    "R-REAL": 462,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "PROP",
+     "antes": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=x"
+     },
+     "despues": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=x"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "origen"
+     ],
+     "regla": "R-PROP",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 715
+  },
+  "eq": {
+   "aceptados": {
+    "R-PROP": 7630,
+    "R-REAL": 1765,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "PROP",
+     "antes": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "despues": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       1
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "eq:6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+      "eq:dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac",
+      "origen",
+      "wd_a:6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+      "wd_a:dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac",
+      "wd_d:6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+      "wd_d:dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac"
+     ],
+     "regla": "R-PROP",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 3773
+  },
+  "estado_origen": {
+   "aceptados": {
+    "R-PROP": 2146,
+    "R-REAL": 154,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "PROP",
+     "antes": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=x"
+     },
+     "despues": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=x"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "origen"
+     ],
+     "regla": "R-PROP",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 244
+  },
+  "evaluacion": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 5664,
+    "conservacion": 273
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "REFUT",
+     "antes": {
+      "c": [
+       0,
+       1
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "despues": {
+      "c": [
+       0,
+       1
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       1
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "origen"
+     ],
+     "regla": "R-REFUT",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 468
+  },
+  "fuente": {
+   "aceptados": {
+    "R-PROP": 1954,
+    "R-REAL": 154,
+    "R-REFUT": 762,
+    "conservacion": 285
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "PROP",
+     "antes": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "despues": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=x"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "origen"
+     ],
+     "regla": "R-PROP",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 32
+  },
+  "objeto": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [],
+   "n_contraejemplos": 0
+  },
+  "recursion": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 762,
+    "conservacion": 1047
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "PROP",
+     "antes": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "despues": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       1
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "estado_certificado": "probado",
+     "premisas": [],
+     "regla": "conservacion",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 460
+  },
+  "testigo": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 944,
+    "conservacion": 273
+   },
+   "ejemplo": [],
+   "n_contraejemplos": 0
+  },
+  "testigo+evaluacion": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 6122,
+    "conservacion": 273
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "REFUT",
+     "antes": {
+      "c": [
+       0,
+       1
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "despues": {
+      "c": [
+       0,
+       1
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       1
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "origen"
+     ],
+     "regla": "R-REFUT",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 744
+  },
+  "vigencia": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 154,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [],
+   "n_contraejemplos": 0
+  },
+  "wd_a": {
+   "aceptados": {
+    "R-PROP": 2678,
+    "R-REAL": 3386,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "REAL",
+     "antes": {
+      "c": [
+       0,
+       1
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       null
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "despues": {
+      "c": [
+       0,
+       1
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "eq",
+      "origen",
+      "wd_a",
+      "wd_c"
+     ],
+     "regla": "R-REAL",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 222
+  },
+  "wd_c": {
+   "aceptados": {
+    "R-PROP": 1902,
+    "R-REAL": 839,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [],
+   "n_contraejemplos": 0
+  },
+  "wd_c+estado_origen": {
+   "aceptados": {
+    "R-PROP": 2146,
+    "R-REAL": 839,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "PROP",
+     "antes": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=x"
+     },
+     "despues": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=x"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "origen"
+     ],
+     "regla": "R-PROP",
+     "verdad": "refutado"
+    }
+   ],
+   "n_contraejemplos": 244
+  },
+  "wd_d": {
+   "aceptados": {
+    "R-PROP": 7056,
+    "R-REAL": 154,
+    "R-REFUT": 762,
+    "conservacion": 273
+   },
+   "ejemplo": [
+    {
+     "afirmacion": "PROP",
+     "antes": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       0
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "despues": {
+      "c": [
+       0,
+       0
+      ],
+      "comb": "id",
+      "f": [
+       0,
+       null
+      ],
+      "h": [
+       0,
+       0
+      ],
+      "pred": "g=0"
+     },
+     "estado_certificado": "probado",
+     "premisas": [
+      "eq:6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+      "eq:dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac",
+      "origen",
+      "wd_a:6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+      "wd_a:dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac",
+      "wd_d:6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+      "wd_d:dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac"
+     ],
+     "regla": "R-PROP",
+     "verdad": null
+    }
+   ],
+   "n_contraejemplos": 3336
+  }
+ }
+}

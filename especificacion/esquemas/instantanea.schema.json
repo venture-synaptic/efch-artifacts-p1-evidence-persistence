@@ -1,0 +1,64 @@
+{
+ "$id": "https://efch.invalid/evidencia/2.5/instantanea.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "properties": {
+  "base": {
+   "additionalProperties": {
+    "type": "string"
+   },
+   "propertyNames": {
+    "enum": [
+     "abi",
+     "cbmc",
+     "cpu",
+     "efch-c",
+     "efch-core",
+     "efch-interp",
+     "efch-smt",
+     "ejecutor",
+     "gcc",
+     "reglas",
+     "traductor",
+     "workload",
+     "z3"
+    ]
+   },
+   "type": "object"
+  },
+  "esquema": {
+   "const": "efch-evidencia/2.5"
+  },
+  "id": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "revisiones": {
+   "additionalProperties": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$",
+    "type": "string"
+   },
+   "propertyNames": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$"
+   },
+   "type": "object"
+  },
+  "semantica": {
+   "enum": [
+    "efch-0.1"
+   ]
+  }
+ },
+ "required": [
+  "base",
+  "esquema",
+  "id",
+  "revisiones",
+  "semantica"
+ ],
+ "title": "instantanea",
+ "type": "object"
+}

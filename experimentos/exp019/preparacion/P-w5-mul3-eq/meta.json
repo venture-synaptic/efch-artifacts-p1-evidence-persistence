@@ -1,0 +1,24 @@
+{
+ "ancho": 5,
+ "cambio": "eq",
+ "candidatas": {
+  "c0": "(mul x 3)",
+  "c1": "(or (mul x 3) 0)",
+  "c2": "(xor (xor (mul x 3) 1) 1)"
+ },
+ "contaminada": false,
+ "cuerpo": "mul3",
+ "cuerpos_antes": {
+  "f": "(mul x 3)",
+  "h": "x",
+  "q": "0"
+ },
+ "cuerpos_despues": {
+  "f": "(xor (mul x 3) 0)",
+  "h": "x",
+  "q": "0"
+ },
+ "doc_f_despues": null,
+ "evoluciona": "f",
+ "id": "P-w5-mul3-eq"
+}

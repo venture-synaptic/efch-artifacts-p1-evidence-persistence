@@ -1,0 +1,17 @@
+; EXP-019 K7-ausencia-de-herramienta, después (S_d). Generado por experimentos/exp019/generar.py; no editar.
+(efch 0.1
+  (computation h
+    (input x (bv 3))
+    (output (bv 3))
+    (semantics x)
+    (budget (llm-calls 0) (llm-usd 0) (smt-seconds 120)))
+  (computation q
+    (input x (bv 3))
+    (output (bv 3))
+    (semantics 0)
+    (budget (llm-calls 0) (llm-usd 0) (smt-seconds 120)))
+  (computation f
+    (input x (bv 3))
+    (output (bv 3))
+    (semantics (add (add x 1) 0))
+    (budget (llm-calls 0) (llm-usd 0) (smt-seconds 120))))

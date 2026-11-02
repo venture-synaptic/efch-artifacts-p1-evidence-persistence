@@ -1,0 +1,9 @@
+# EXP-019 — versiones y semillas del instrumento (borrador; lo congela el coordinador tras la auditoría de Sol)
+python: 3.14.4
+z3: 5.1.0.0 (scripts/vendor_z3.sh), wheel sha256 dfad9e309d7010b1ff6bdb33f21570a1603ef4727373221c7117a74448f0cfef
+z3_arbol_extraido (resultados/preparacion-exp019/z3-instalacion.txt): 3046a69a7acf062f9e69baf89783d3dd3d24a1ba4d00315d5f74761fdcb90a73
+SEMILLA_ORDEN: 20261101 (evaluacion/orden.json, congelado en MANIFIESTO.sha256)
+SEMILLA_PREPARACION: 20261102 (preparacion/orden.json, congelado en MANIFIESTO.sha256)
+SEMILLA_AUTOPRUEBA: 20261103 (autopruebas.py)
+PYTHONHASHSEED: 0 (todos los subprocesos)
+limites: ulimit -v 4194304 KiB por subproceso; 900 s fase 0; 600 s fase 1; 120 s por invocación del solucionador

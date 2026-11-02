@@ -1,0 +1,332 @@
+{
+ "$id": "https://efch.invalid/evidencia/2.5/afirmacion.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "allOf": [
+  {
+   "if": {
+    "properties": {
+     "clase": {
+      "const": "WD"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "contexto": {
+      "const": {}
+     },
+     "sujetos": {
+      "propertyNames": {
+       "enum": [
+        "objeto"
+       ]
+      },
+      "required": [
+       "objeto"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "clase": {
+      "const": "EQ"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "contexto": {
+      "const": {
+       "direccion": "d->a"
+      }
+     },
+     "sujetos": {
+      "propertyNames": {
+       "enum": [
+        "anterior",
+        "nueva"
+       ]
+      },
+      "required": [
+       "anterior",
+       "nueva"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "clase": {
+      "const": "PROP"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "contexto": {
+      "const": {
+       "supuestos": [
+        "L-OBS"
+       ]
+      }
+     },
+     "sujetos": {
+      "propertyNames": {
+       "enum": [
+        "propiedad"
+       ]
+      },
+      "required": [
+       "propiedad"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "clase": {
+      "const": "REAL"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "contexto": {
+      "const": {}
+     },
+     "sujetos": {
+      "propertyNames": {
+       "enum": [
+        "candidata",
+        "computacion"
+       ]
+      },
+      "required": [
+       "candidata",
+       "computacion"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "clase": {
+      "const": "REFUT"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "contexto": {
+      "additionalProperties": false,
+      "properties": {
+       "testigo": {
+        "additionalProperties": {
+         "anyOf": [
+          {
+           "type": "boolean"
+          },
+          {
+           "minimum": 0,
+           "type": "integer"
+          },
+          {
+           "items": {
+            "maximum": 255,
+            "minimum": 0,
+            "type": "integer"
+           },
+           "type": "array"
+          }
+         ]
+        },
+        "type": "object"
+       }
+      },
+      "required": [
+       "testigo"
+      ],
+      "type": "object"
+     },
+     "sujetos": {
+      "propertyNames": {
+       "enum": [
+        "candidata",
+        "computacion"
+       ]
+      },
+      "required": [
+       "candidata",
+       "computacion"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "clase": {
+      "const": "INV"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "contexto": {
+      "const": {}
+     },
+     "sujetos": {
+      "propertyNames": {
+       "enum": [
+        "objeto"
+       ]
+      },
+      "required": [
+       "objeto"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "clase": {
+      "const": "CBMC"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "contexto": {
+      "const": {}
+     },
+     "sujetos": {
+      "propertyNames": {
+       "enum": [
+        "candidata",
+        "computacion"
+       ]
+      },
+      "required": [
+       "candidata",
+       "computacion"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "clase": {
+      "const": "TRADUCCION-C"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "contexto": {
+      "const": {}
+     },
+     "sujetos": {
+      "propertyNames": {
+       "enum": [
+        "objeto"
+       ]
+      },
+      "required": [
+       "objeto"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "clase": {
+      "const": "RENDIMIENTO"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "contexto": {
+      "const": {}
+     },
+     "sujetos": {
+      "propertyNames": {
+       "enum": [
+        "objeto"
+       ]
+      },
+      "required": [
+       "objeto"
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "properties": {
+  "clase": {
+   "enum": [
+    "WD",
+    "EQ",
+    "PROP",
+    "REAL",
+    "REFUT",
+    "INV",
+    "CBMC",
+    "TRADUCCION-C",
+    "RENDIMIENTO"
+   ]
+  },
+  "contexto": {
+   "type": "object"
+  },
+  "esquema": {
+   "const": "efch-evidencia/2.5"
+  },
+  "id": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "semantica": {
+   "enum": [
+    "efch-0.1"
+   ]
+  },
+  "sujetos": {
+   "additionalProperties": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$",
+    "type": "string"
+   },
+   "type": "object"
+  }
+ },
+ "required": [
+  "clase",
+  "contexto",
+  "esquema",
+  "id",
+  "semantica",
+  "sujetos"
+ ],
+ "title": "afirmacion",
+ "type": "object"
+}

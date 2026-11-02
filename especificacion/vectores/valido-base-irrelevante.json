@@ -1,0 +1,414 @@
+{
+ "comprobacion": {
+  "certificado": "1d4f5abdcf78d69bbad7e6b274383d946dc12ba84e3b7e8686fd1890f4b79043",
+  "tipo": "validar"
+ },
+ "descripcion": "RENDIMIENTO se conserva aunque cambie Z3 (no está en su base)",
+ "esperado": {
+  "valido": true
+ },
+ "nombre": "valido-base-irrelevante",
+ "paquete": {
+  "afirmaciones": {
+   "a785949178021b4417be9d23ba07a0f82a6f4525c392b4f4cb8a2f4f9ea1b34d": {
+    "clase": "WD",
+    "contexto": {},
+    "esquema": "efch-evidencia/2.5",
+    "id": "a785949178021b4417be9d23ba07a0f82a6f4525c392b4f4cb8a2f4f9ea1b34d",
+    "semantica": "efch-0.1",
+    "sujetos": {
+     "objeto": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda"
+    }
+   },
+   "cbbfb02aa32a8a01c8bdd0814a33ecdf1d5232b312c6e5bc22b8b53cce448acf": {
+    "clase": "RENDIMIENTO",
+    "contexto": {},
+    "esquema": "efch-evidencia/2.5",
+    "id": "cbbfb02aa32a8a01c8bdd0814a33ecdf1d5232b312c6e5bc22b8b53cce448acf",
+    "semantica": "efch-0.1",
+    "sujetos": {
+     "objeto": "61388a810d1fead4339bcb1b8e848c779d578961f6a05d6e32034a1e3c48f20e"
+    }
+   }
+  },
+  "certificados": {
+   "1d4f5abdcf78d69bbad7e6b274383d946dc12ba84e3b7e8686fd1890f4b79043": {
+    "afirmacion": "cbbfb02aa32a8a01c8bdd0814a33ecdf1d5232b312c6e5bc22b8b53cce448acf",
+    "base": {
+     "abi": "v1",
+     "cpu": "v1",
+     "efch-c": "v1",
+     "ejecutor": "v1",
+     "gcc": "v1",
+     "reglas": "v1",
+     "workload": "v1"
+    },
+    "cierre": {
+     "8e538a483770262cd5f00a7108e6ca31112c912a264c10000507bc2e0834e8bc": "61388a810d1fead4339bcb1b8e848c779d578961f6a05d6e32034a1e3c48f20e"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "estado": "probado",
+    "id": "1d4f5abdcf78d69bbad7e6b274383d946dc12ba84e3b7e8686fd1890f4b79043",
+    "instantanea": "a07508087cd4f37205dc8683be7f03aebfae58fbc1478118364e24da3e2458a1",
+    "objeto_verificado": null,
+    "premisas": {},
+    "procedencia": "60f9f0002cea99bcf402b6cb8444e6d5b57c9973ece36d32eb2560929765e8d0",
+    "regla": "conservacion",
+    "semantica": "efch-0.1",
+    "via": "conservada"
+   },
+   "59c295621176cc762bcb5b8ee4ea0b05b545939203e2f91c9acd1a235345271a": {
+    "afirmacion": "a785949178021b4417be9d23ba07a0f82a6f4525c392b4f4cb8a2f4f9ea1b34d",
+    "base": {
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "reglas": "v1",
+     "z3": "v2"
+    },
+    "cierre": {
+     "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "estado": "probado",
+    "id": "59c295621176cc762bcb5b8ee4ea0b05b545939203e2f91c9acd1a235345271a",
+    "instantanea": "a07508087cd4f37205dc8683be7f03aebfae58fbc1478118364e24da3e2458a1",
+    "objeto_verificado": null,
+    "premisas": {},
+    "procedencia": "d0d55c757839ee1a67543350f3deb3597b1fe229f6f18e77457a735e42368232",
+    "regla": "conservacion",
+    "semantica": "efch-0.1",
+    "via": "conservada"
+   },
+   "60f9f0002cea99bcf402b6cb8444e6d5b57c9973ece36d32eb2560929765e8d0": {
+    "afirmacion": "cbbfb02aa32a8a01c8bdd0814a33ecdf1d5232b312c6e5bc22b8b53cce448acf",
+    "base": {
+     "abi": "v1",
+     "cpu": "v1",
+     "efch-c": "v1",
+     "ejecutor": "v1",
+     "gcc": "v1",
+     "reglas": "v1",
+     "workload": "v1"
+    },
+    "cierre": {
+     "8e538a483770262cd5f00a7108e6ca31112c912a264c10000507bc2e0834e8bc": "61388a810d1fead4339bcb1b8e848c779d578961f6a05d6e32034a1e3c48f20e"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "estado": "probado",
+    "id": "60f9f0002cea99bcf402b6cb8444e6d5b57c9973ece36d32eb2560929765e8d0",
+    "instantanea": "c99243680f5cbc081cc3c1c277f39a7a2669c0d555b788bccd5295bcd654eecb",
+    "objeto_verificado": "1806a8ced446915999d83c92cf5e81c6a294f3420d8c342c99c8e997743c52d5",
+    "premisas": {},
+    "procedencia": null,
+    "regla": "directa",
+    "semantica": "efch-0.1",
+    "via": "directa"
+   },
+   "d0d55c757839ee1a67543350f3deb3597b1fe229f6f18e77457a735e42368232": {
+    "afirmacion": "a785949178021b4417be9d23ba07a0f82a6f4525c392b4f4cb8a2f4f9ea1b34d",
+    "base": {
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "reglas": "v1",
+     "z3": "v1"
+    },
+    "cierre": {
+     "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "estado": "probado",
+    "id": "d0d55c757839ee1a67543350f3deb3597b1fe229f6f18e77457a735e42368232",
+    "instantanea": "c99243680f5cbc081cc3c1c277f39a7a2669c0d555b788bccd5295bcd654eecb",
+    "objeto_verificado": "1806a8ced446915999d83c92cf5e81c6a294f3420d8c342c99c8e997743c52d5",
+    "premisas": {},
+    "procedencia": null,
+    "regla": "directa",
+    "semantica": "efch-0.1",
+    "via": "directa"
+   }
+  },
+  "esquema": "efch-evidencia/2.5",
+  "instantaneas": {
+   "a07508087cd4f37205dc8683be7f03aebfae58fbc1478118364e24da3e2458a1": {
+    "base": {
+     "abi": "v1",
+     "cbmc": "v1",
+     "cpu": "v1",
+     "efch-c": "v1",
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "gcc": "v1",
+     "reglas": "v1",
+     "traductor": "v1",
+     "workload": "v1",
+     "z3": "v2"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "id": "a07508087cd4f37205dc8683be7f03aebfae58fbc1478118364e24da3e2458a1",
+    "revisiones": {
+     "507be5a2bce54c30d9b4254a2397b8abf994cbfe0b3813f2f156a223b56aeb04": "9e44f15691e728b90d6e7c5e25b790d0db6f63a1c2d1d72eaf3045f17c85f1df",
+     "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": "35568a3814817c974ec9dd6ecc2084d82606647676bea7bc39d2682afaf1e1e8",
+     "6f2dbf5df34005a56d52609da14e9644e742d6522879f52e381e618e6e659cf5": "c4737c794ef6d17e71cecb2e089eeda247bd2114e70c825d5a19b6ff321135a1",
+     "8e538a483770262cd5f00a7108e6ca31112c912a264c10000507bc2e0834e8bc": "61388a810d1fead4339bcb1b8e848c779d578961f6a05d6e32034a1e3c48f20e",
+     "9db579c0348929f059c015db4445ec1a9d8f9a6851be0190b7035225c11fe65b": "414c2517f6e84adc7a05620d0687321efe473279c75d34f6fecce8256047fe1b",
+     "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda",
+     "b743671aa15142799b9bb453313b8c430f05c30e272e5de0db70376ffbc67991": "39f670516755bd3a493cda6312ffe0f07d82dc811b35e6571289045834004bf7",
+     "d660c1ef43ed44ac02bf4b93bcc0a3eceeb713495fac799785c3ab5382d2e5ea": "6d332d0334a2de44cddaa5956910c0ba298b681adaf06fbe0c1c9eb6dc4c5cbe",
+     "de03113413fcd66edee7a5f7c7ee6f686da094d09887b8f0031b6be0e00911c3": "56eca6c0243d94db1fbb67c664da613e5b35e1c2a229d5c8aa76bceac47aaf5e",
+     "f3d4efc3107bf3ec3b548b9e0d1026f02d928e540b4a3b58c19c49807cc63a95": "8ceec0fd50c9d85086353ae9984b064af5ce6da612eb8a315e2b0c3c6627c300"
+    },
+    "semantica": "efch-0.1"
+   },
+   "c99243680f5cbc081cc3c1c277f39a7a2669c0d555b788bccd5295bcd654eecb": {
+    "base": {
+     "abi": "v1",
+     "cbmc": "v1",
+     "cpu": "v1",
+     "efch-c": "v1",
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "gcc": "v1",
+     "reglas": "v1",
+     "traductor": "v1",
+     "workload": "v1",
+     "z3": "v1"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "id": "c99243680f5cbc081cc3c1c277f39a7a2669c0d555b788bccd5295bcd654eecb",
+    "revisiones": {
+     "507be5a2bce54c30d9b4254a2397b8abf994cbfe0b3813f2f156a223b56aeb04": "9e44f15691e728b90d6e7c5e25b790d0db6f63a1c2d1d72eaf3045f17c85f1df",
+     "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": "35568a3814817c974ec9dd6ecc2084d82606647676bea7bc39d2682afaf1e1e8",
+     "6f2dbf5df34005a56d52609da14e9644e742d6522879f52e381e618e6e659cf5": "c4737c794ef6d17e71cecb2e089eeda247bd2114e70c825d5a19b6ff321135a1",
+     "8e538a483770262cd5f00a7108e6ca31112c912a264c10000507bc2e0834e8bc": "61388a810d1fead4339bcb1b8e848c779d578961f6a05d6e32034a1e3c48f20e",
+     "9db579c0348929f059c015db4445ec1a9d8f9a6851be0190b7035225c11fe65b": "414c2517f6e84adc7a05620d0687321efe473279c75d34f6fecce8256047fe1b",
+     "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda",
+     "b743671aa15142799b9bb453313b8c430f05c30e272e5de0db70376ffbc67991": "39f670516755bd3a493cda6312ffe0f07d82dc811b35e6571289045834004bf7",
+     "d660c1ef43ed44ac02bf4b93bcc0a3eceeb713495fac799785c3ab5382d2e5ea": "6d332d0334a2de44cddaa5956910c0ba298b681adaf06fbe0c1c9eb6dc4c5cbe",
+     "de03113413fcd66edee7a5f7c7ee6f686da094d09887b8f0031b6be0e00911c3": "56eca6c0243d94db1fbb67c664da613e5b35e1c2a229d5c8aa76bceac47aaf5e",
+     "f3d4efc3107bf3ec3b548b9e0d1026f02d928e540b4a3b58c19c49807cc63a95": "8ceec0fd50c9d85086353ae9984b064af5ce6da612eb8a315e2b0c3c6627c300"
+    },
+    "semantica": "efch-0.1"
+   }
+  },
+  "ranuras": {
+   "507be5a2bce54c30d9b4254a2397b8abf994cbfe0b3813f2f156a223b56aeb04": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "507be5a2bce54c30d9b4254a2397b8abf994cbfe0b3813f2f156a223b56aeb04",
+    "nombre": "k2",
+    "tipo": "computacion"
+   },
+   "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+    "nombre": "g",
+    "tipo": "computacion"
+   },
+   "6f2dbf5df34005a56d52609da14e9644e742d6522879f52e381e618e6e659cf5": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "6f2dbf5df34005a56d52609da14e9644e742d6522879f52e381e618e6e659cf5",
+    "nombre": "r",
+    "tipo": "propiedad"
+   },
+   "8e538a483770262cd5f00a7108e6ca31112c912a264c10000507bc2e0834e8bc": {
+    "ambito": "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85",
+    "esquema": "efch-evidencia/2.5",
+    "id": "8e538a483770262cd5f00a7108e6ca31112c912a264c10000507bc2e0834e8bc",
+    "nombre": "c",
+    "tipo": "candidata"
+   },
+   "9db579c0348929f059c015db4445ec1a9d8f9a6851be0190b7035225c11fe65b": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "9db579c0348929f059c015db4445ec1a9d8f9a6851be0190b7035225c11fe65b",
+    "nombre": "p",
+    "tipo": "propiedad"
+   },
+   "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85",
+    "nombre": "f-",
+    "tipo": "computacion"
+   },
+   "b743671aa15142799b9bb453313b8c430f05c30e272e5de0db70376ffbc67991": {
+    "ambito": "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85",
+    "esquema": "efch-evidencia/2.5",
+    "id": "b743671aa15142799b9bb453313b8c430f05c30e272e5de0db70376ffbc67991",
+    "nombre": "c1",
+    "tipo": "candidata"
+   },
+   "d660c1ef43ed44ac02bf4b93bcc0a3eceeb713495fac799785c3ab5382d2e5ea": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "d660c1ef43ed44ac02bf4b93bcc0a3eceeb713495fac799785c3ab5382d2e5ea",
+    "nombre": "h",
+    "tipo": "computacion"
+   },
+   "de03113413fcd66edee7a5f7c7ee6f686da094d09887b8f0031b6be0e00911c3": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "de03113413fcd66edee7a5f7c7ee6f686da094d09887b8f0031b6be0e00911c3",
+    "nombre": "q",
+    "tipo": "propiedad"
+   },
+   "f3d4efc3107bf3ec3b548b9e0d1026f02d928e540b4a3b58c19c49807cc63a95": {
+    "ambito": "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85",
+    "esquema": "efch-evidencia/2.5",
+    "id": "f3d4efc3107bf3ec3b548b9e0d1026f02d928e540b4a3b58c19c49807cc63a95",
+    "nombre": "ch",
+    "tipo": "candidata"
+   }
+  },
+  "registros": {},
+  "revisiones": {
+   "35568a3814817c974ec9dd6ecc2084d82606647676bea7bc39d2682afaf1e1e8": {
+    "contenido": "688fffabcc49e367d6280313b305a4b55ebf4b6295509b7b1e6ae6405daeaaf3",
+    "dependencias": {
+     "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation g ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation g ((x (bv 8))) (bv 8)) (let _0 x (const 8 0)))",
+    "forma_fuente": "04fca4f9ebdaa7933f2d0dd6b8b656ff84c09b37402800a20cc0084120584daa",
+    "fuente": "(computation g (input x (bv 8)) (output (bv 8)) (semantics (call f- x)))",
+    "id": "35568a3814817c974ec9dd6ecc2084d82606647676bea7bc39d2682afaf1e1e8",
+    "ranura": "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+    "semantica": "efch-0.1"
+   },
+   "39f670516755bd3a493cda6312ffe0f07d82dc811b35e6571289045834004bf7": {
+    "contenido": "597b42d0f5ebb697a15b9104ff67bf23a2587197b0b642f9f31343eaabdd3573",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation f- ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation f- ((x (bv 8))) (bv 8)) (const 8 1))",
+    "forma_fuente": "b6f67b8f7ca859419b2212880738eccb5c3705f9fc932acafbd426e73e99a28e",
+    "fuente": "(candidate c1 (implements f-) (body 1))",
+    "id": "39f670516755bd3a493cda6312ffe0f07d82dc811b35e6571289045834004bf7",
+    "ranura": "b743671aa15142799b9bb453313b8c430f05c30e272e5de0db70376ffbc67991",
+    "semantica": "efch-0.1"
+   },
+   "414c2517f6e84adc7a05620d0687321efe473279c75d34f6fecce8256047fe1b": {
+    "contenido": "c31d33779a963750c66e953496f95fae18ea2e31028dfcc47df9998a95499ed5",
+    "dependencias": {
+     "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": "35568a3814817c974ec9dd6ecc2084d82606647676bea7bc39d2682afaf1e1e8",
+     "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(property ((x (bv 8))))",
+    "forma_canonica": "(efch 0.1 (property ((x (bv 8)))) (eq (let _0 x (let _1 _0 (const 8 0))) (const 8 0)))",
+    "forma_fuente": "5cdfc08170cbbe06717a160960bfeb1d36d0e06c1c2ca64a15547cfb5e1ba435",
+    "fuente": "(property p (forall ((x (bv 8))) (eq (call g x) 0)))",
+    "id": "414c2517f6e84adc7a05620d0687321efe473279c75d34f6fecce8256047fe1b",
+    "ranura": "9db579c0348929f059c015db4445ec1a9d8f9a6851be0190b7035225c11fe65b",
+    "semantica": "efch-0.1"
+   },
+   "56eca6c0243d94db1fbb67c664da613e5b35e1c2a229d5c8aa76bceac47aaf5e": {
+    "contenido": "0d3b4b466f6ca985ff9f47cbeb793eb9aa2e520a1ee837621a1b1dd570ba98fd",
+    "dependencias": {
+     "507be5a2bce54c30d9b4254a2397b8abf994cbfe0b3813f2f156a223b56aeb04": "9e44f15691e728b90d6e7c5e25b790d0db6f63a1c2d1d72eaf3045f17c85f1df",
+     "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": "35568a3814817c974ec9dd6ecc2084d82606647676bea7bc39d2682afaf1e1e8",
+     "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(property ((x (bv 8))))",
+    "forma_canonica": "(efch 0.1 (property ((x (bv 8)))) (eq (let _0 x (let _2 (let _1 _0 (const 8 0)) (let _3 _2 (const 8 0)))) (let _4 x (const 8 0))))",
+    "forma_fuente": "a562d281f4ac31658091914994626713665e5d18437e0612caf6ea30ead30aef",
+    "fuente": "(property q (forall ((x (bv 8))) (eq (call k2 x) (call f- x))))",
+    "id": "56eca6c0243d94db1fbb67c664da613e5b35e1c2a229d5c8aa76bceac47aaf5e",
+    "ranura": "de03113413fcd66edee7a5f7c7ee6f686da094d09887b8f0031b6be0e00911c3",
+    "semantica": "efch-0.1"
+   },
+   "61388a810d1fead4339bcb1b8e848c779d578961f6a05d6e32034a1e3c48f20e": {
+    "contenido": "1806a8ced446915999d83c92cf5e81c6a294f3420d8c342c99c8e997743c52d5",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation f- ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation f- ((x (bv 8))) (bv 8)) (const 8 0))",
+    "forma_fuente": "dc2126d58be408ef903c2d2587846f1752511ce119f804c3b97db833b5d03a8e",
+    "fuente": "(candidate c (implements f-) (body 0))",
+    "id": "61388a810d1fead4339bcb1b8e848c779d578961f6a05d6e32034a1e3c48f20e",
+    "ranura": "8e538a483770262cd5f00a7108e6ca31112c912a264c10000507bc2e0834e8bc",
+    "semantica": "efch-0.1"
+   },
+   "6d332d0334a2de44cddaa5956910c0ba298b681adaf06fbe0c1c9eb6dc4c5cbe": {
+    "contenido": "64103a86624a6d128a6dee45c9e68491b1394ce4207629dc5b1af76bebfdcbd3",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation h ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation h ((x (bv 8))) (bv 8)) (const 8 0))",
+    "forma_fuente": "ef3a8d93023827ced2a99fefafa6b82d9a4f98f2a8ddfc549a4dc0e69de775d6",
+    "fuente": "(computation h (input x (bv 8)) (output (bv 8)) (semantics 0))",
+    "id": "6d332d0334a2de44cddaa5956910c0ba298b681adaf06fbe0c1c9eb6dc4c5cbe",
+    "ranura": "d660c1ef43ed44ac02bf4b93bcc0a3eceeb713495fac799785c3ab5382d2e5ea",
+    "semantica": "efch-0.1"
+   },
+   "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda": {
+    "contenido": "1806a8ced446915999d83c92cf5e81c6a294f3420d8c342c99c8e997743c52d5",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation f- ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation f- ((x (bv 8))) (bv 8)) (const 8 0))",
+    "forma_fuente": "c3f0a4a3c573dbc4d3192b490aeefb0990e918b62ef2c29e9786a8e3e597cd36",
+    "fuente": "(computation f- (input x (bv 8)) (output (bv 8)) (semantics 0))",
+    "id": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda",
+    "ranura": "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85",
+    "semantica": "efch-0.1"
+   },
+   "8ceec0fd50c9d85086353ae9984b064af5ce6da612eb8a315e2b0c3c6627c300": {
+    "contenido": "b68c6e65127e9ceb485ddb978a97cf16c142e5410c32c3b30bfd5583e7c3bc73",
+    "dependencias": {
+     "d660c1ef43ed44ac02bf4b93bcc0a3eceeb713495fac799785c3ab5382d2e5ea": "6d332d0334a2de44cddaa5956910c0ba298b681adaf06fbe0c1c9eb6dc4c5cbe"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation f- ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation f- ((x (bv 8))) (bv 8)) (let _0 x (const 8 0)))",
+    "forma_fuente": "18589a9e598e8525b7cbe50f6c1bf19ad97f55d179fe668786d094d749941f0f",
+    "fuente": "(candidate ch (implements f-) (body (call h x)))",
+    "id": "8ceec0fd50c9d85086353ae9984b064af5ce6da612eb8a315e2b0c3c6627c300",
+    "ranura": "f3d4efc3107bf3ec3b548b9e0d1026f02d928e540b4a3b58c19c49807cc63a95",
+    "semantica": "efch-0.1"
+   },
+   "9e44f15691e728b90d6e7c5e25b790d0db6f63a1c2d1d72eaf3045f17c85f1df": {
+    "contenido": "78bd7a24140d1a391be2339dba25fc784f0ea12d28b64311941bcd5d520641b4",
+    "dependencias": {
+     "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": "35568a3814817c974ec9dd6ecc2084d82606647676bea7bc39d2682afaf1e1e8",
+     "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation k2 ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation k2 ((x (bv 8))) (bv 8)) (let _1 (let _0 x (const 8 0)) (let _2 _1 (const 8 0))))",
+    "forma_fuente": "be5d782c8311a3e52b73093526d7d88ad8fbcbc2ca84308a2ff5160982afcb67",
+    "fuente": "(computation k2 (input x (bv 8)) (output (bv 8)) (semantics (call g (call f- x))))",
+    "id": "9e44f15691e728b90d6e7c5e25b790d0db6f63a1c2d1d72eaf3045f17c85f1df",
+    "ranura": "507be5a2bce54c30d9b4254a2397b8abf994cbfe0b3813f2f156a223b56aeb04",
+    "semantica": "efch-0.1"
+   },
+   "c4737c794ef6d17e71cecb2e089eeda247bd2114e70c825d5a19b6ff321135a1": {
+    "contenido": "1abefdd0a848eacef5b2577959e3033d7e825ab6041597e01624757da5c0c9c2",
+    "dependencias": {
+     "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": "35568a3814817c974ec9dd6ecc2084d82606647676bea7bc39d2682afaf1e1e8",
+     "aff2dc88cba2d8325977ed1745b60f86c1671b6dec20fbbe40b0eb14a5ac9f85": "85eae9625f1134f0854cd6ef8a8c9f466154a18890f156ed87c951b6eaf7adda"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(property ((x (bv 8))))",
+    "forma_canonica": "(efch 0.1 (property ((x (bv 8)))) (eq (let _0 x (let _1 _0 (const 8 0))) (const 8 1)))",
+    "forma_fuente": "f334249f3c6f5494f1562b369f724b8c31f199007c92d930b4ceab386c9f2f66",
+    "fuente": "(property r (forall ((x (bv 8))) (eq (call g x) 1)))",
+    "id": "c4737c794ef6d17e71cecb2e089eeda247bd2114e70c825d5a19b6ff321135a1",
+    "ranura": "6f2dbf5df34005a56d52609da14e9644e742d6522879f52e381e618e6e659cf5",
+    "semantica": "efch-0.1"
+   }
+  }
+ }
+}

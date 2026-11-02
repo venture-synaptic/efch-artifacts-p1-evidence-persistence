@@ -1,0 +1,20 @@
+mundos 1476, intentos 422545, aceptados {'R-PROP': 1902, 'R-REAL': 154, 'conservacion': 273, 'R-REFUT': 762}, contraejemplos 0
+  relajar contexto                : contraejemplos 715
+  relajar recursion               : contraejemplos 460
+  relajar vigencia                : contraejemplos 0
+  relajar base                    : contraejemplos 0
+  relajar cierre                  : contraejemplos 0
+  relajar objeto                  : contraejemplos 0
+  relajar estado_origen           : contraejemplos 244
+  relajar eq                      : contraejemplos 3773
+  relajar wd_a                    : contraejemplos 222
+  relajar wd_d                    : contraejemplos 3336
+  relajar wd_c                    : contraejemplos 0
+  relajar fuente                  : contraejemplos 32
+  relajar candidata               : contraejemplos 0
+  relajar evaluacion              : contraejemplos 468
+  relajar testigo                 : contraejemplos 0
+  relajar cobertura               : contraejemplos 0
+  relajar candidata+cobertura     : contraejemplos 5
+  relajar wd_c+estado_origen      : contraejemplos 244
+  relajar testigo+evaluacion      : contraejemplos 744

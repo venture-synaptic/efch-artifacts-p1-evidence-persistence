@@ -1,0 +1,54 @@
+{
+ "alcance": "identidad por fuente con doc e inocuidad semántica de doc en f; no doc en candidatas ni otras anotaciones",
+ "calibracion_B": {
+  "intervencion": [
+   "B sobre la entrada K2 (solo doc): la fuente no entra en N"
+  ],
+  "ramas": {
+   "fallo (calibración de B)": [
+    "alguna consulta de S_d falla en la caché"
+   ],
+   "inconcluso (no superado)": [
+    "error del arnés"
+   ],
+   "superado": [
+    "cada consulta de S_d acierta en una clave de S_a: n_B = 0"
+   ]
+  }
+ },
+ "cambio": "doc",
+ "codigos_admitidos": null,
+ "condicion": "C (y B como calibración)",
+ "familia": "cambio de etiqueta",
+ "fase0_extra": null,
+ "gemelo": null,
+ "id": "K2-doc",
+ "intervencion": {
+  "fase": "1",
+  "procedimiento": [
+   "S_d = S_a salvo (doc ...) en f, con comillas, \\, ; y paréntesis escapados; evolve(f)"
+  ]
+ },
+ "precondiciones_de_activacion": [
+  "el lector propio y el de efch leen la cadena; el contraste ve fuente de f distinta y expansión igual"
+ ],
+ "ramas": {
+  "fallo (refuta R1)": [
+   "la revisión de f no cambia (doc ignorado en la identidad) o `misma identidad`",
+   "alguna REAL(ci, f_d) conservada desde S_a",
+   "cualquier V1/V2"
+  ],
+  "inconcluso (no superado)": [
+   "alguna obligación inconclusa",
+   "error del arnés"
+  ],
+  "parada global": [
+   "modificación parcial inesperada (monitor D11)"
+  ],
+  "superado": [
+   "revisión de f en S_d distinta de la de S_a y mismo `contenido` (v2.7 §2.2)",
+   "WD(f_d) y REAL(ci, f_d) probado; ninguna REAL `conservada` desde S_a; origen R-REAL o directa",
+   "cero V1/V2; monitor sin modificación parcial"
+  ]
+ }
+}

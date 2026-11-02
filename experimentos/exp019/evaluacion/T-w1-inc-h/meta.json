@@ -1,0 +1,24 @@
+{
+ "ancho": 1,
+ "cambio": "h",
+ "candidatas": {
+  "c0": "(add x 1)",
+  "c1": "(add 0 (add x 1))",
+  "c2": "(sub (add (add x 1) 1) 1)"
+ },
+ "contaminada": false,
+ "cuerpo": "inc",
+ "cuerpos_antes": {
+  "f": "(add x 1)",
+  "h": "x",
+  "q": "0"
+ },
+ "cuerpos_despues": {
+  "f": "(add x 1)",
+  "h": "(add x 1)",
+  "q": "0"
+ },
+ "doc_f_despues": null,
+ "evoluciona": "h",
+ "id": "T-w1-inc-h"
+}

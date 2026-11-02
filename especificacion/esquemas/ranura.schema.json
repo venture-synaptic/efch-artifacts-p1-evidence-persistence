@@ -1,0 +1,74 @@
+{
+ "$id": "https://efch.invalid/evidencia/2.5/ranura.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "else": {
+  "properties": {
+   "ambito": {
+    "const": ""
+   }
+  }
+ },
+ "if": {
+  "properties": {
+   "tipo": {
+    "enum": [
+     "candidata",
+     "candidata-lang"
+    ]
+   }
+  }
+ },
+ "properties": {
+  "ambito": {
+   "anyOf": [
+    {
+     "const": ""
+    },
+    {
+     "maxLength": 64,
+     "pattern": "^[0-9a-f]{64}$",
+     "type": "string"
+    }
+   ]
+  },
+  "esquema": {
+   "const": "efch-evidencia/2.5"
+  },
+  "id": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "nombre": {
+   "minLength": 1,
+   "type": "string"
+  },
+  "tipo": {
+   "enum": [
+    "computacion",
+    "propiedad",
+    "candidata",
+    "candidata-lang"
+   ]
+  }
+ },
+ "required": [
+  "ambito",
+  "esquema",
+  "id",
+  "nombre",
+  "tipo"
+ ],
+ "then": {
+  "properties": {
+   "ambito": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$",
+    "type": "string"
+   }
+  }
+ },
+ "title": "ranura",
+ "type": "object"
+}

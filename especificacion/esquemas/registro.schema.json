@@ -1,0 +1,105 @@
+{
+ "$id": "https://efch.invalid/evidencia/2.5/registro.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "else": {
+  "properties": {
+   "origen": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$",
+    "type": "string"
+   }
+  }
+ },
+ "if": {
+  "properties": {
+   "via": {
+    "const": "directa"
+   }
+  }
+ },
+ "properties": {
+  "afirmacion": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "esquema": {
+   "const": "efch-evidencia/2.5"
+  },
+  "id": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "instantanea": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "mediciones": {
+   "additionalProperties": {
+    "type": [
+     "string",
+     "integer",
+     "boolean",
+     "null"
+    ]
+   },
+   "type": "object"
+  },
+  "origen": {
+   "anyOf": [
+    {
+     "maxLength": 64,
+     "pattern": "^[0-9a-f]{64}$",
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ]
+  },
+  "resultado": {
+   "enum": [
+    "probado",
+    "refutado",
+    "desconocido",
+    "no comprobado",
+    "fuera de alcance",
+    "evidencia experimental"
+   ]
+  },
+  "semantica": {
+   "enum": [
+    "efch-0.1"
+   ]
+  },
+  "via": {
+   "enum": [
+    "directa",
+    "conservada-operativa"
+   ]
+  }
+ },
+ "required": [
+  "afirmacion",
+  "esquema",
+  "id",
+  "instantanea",
+  "mediciones",
+  "origen",
+  "resultado",
+  "semantica",
+  "via"
+ ],
+ "then": {
+  "properties": {
+   "origen": {
+    "type": "null"
+   }
+  }
+ },
+ "title": "registro",
+ "type": "object"
+}

@@ -1,0 +1,81 @@
+{
+ "$id": "https://efch.invalid/evidencia/2.5/paquete.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "properties": {
+  "afirmaciones": {
+   "additionalProperties": {
+    "$ref": "afirmacion.schema.json"
+   },
+   "propertyNames": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$"
+   },
+   "type": "object"
+  },
+  "certificados": {
+   "additionalProperties": {
+    "$ref": "certificado.schema.json"
+   },
+   "propertyNames": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$"
+   },
+   "type": "object"
+  },
+  "esquema": {
+   "const": "efch-evidencia/2.5"
+  },
+  "instantaneas": {
+   "additionalProperties": {
+    "$ref": "instantanea.schema.json"
+   },
+   "propertyNames": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$"
+   },
+   "type": "object"
+  },
+  "ranuras": {
+   "additionalProperties": {
+    "$ref": "ranura.schema.json"
+   },
+   "propertyNames": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$"
+   },
+   "type": "object"
+  },
+  "registros": {
+   "additionalProperties": {
+    "$ref": "registro.schema.json"
+   },
+   "propertyNames": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$"
+   },
+   "type": "object"
+  },
+  "revisiones": {
+   "additionalProperties": {
+    "$ref": "revision.schema.json"
+   },
+   "propertyNames": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$"
+   },
+   "type": "object"
+  }
+ },
+ "required": [
+  "afirmaciones",
+  "certificados",
+  "esquema",
+  "instantaneas",
+  "ranuras",
+  "registros",
+  "revisiones"
+ ],
+ "title": "paquete",
+ "type": "object"
+}

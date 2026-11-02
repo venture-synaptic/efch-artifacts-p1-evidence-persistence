@@ -1,0 +1,8 @@
+; EXP-019 T-w4-inc-h, candidatas (fase 0). Generado por experimentos/exp019/generar.py; no editar.
+(efch 0.1
+  (candidate c0 (implements f)
+    (body (add x 1)))
+  (candidate c1 (implements f)
+    (body (add 0 (add x 1))))
+  (candidate c2 (implements f)
+    (body (sub (add (add x 1) 1) 1))))

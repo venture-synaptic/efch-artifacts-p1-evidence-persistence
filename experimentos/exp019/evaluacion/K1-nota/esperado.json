@@ -1,0 +1,56 @@
+{
+ "alcance": "solo que `note` no es causal; nada más",
+ "calibracion_B": {
+  "intervencion": [
+   "doble sobre smt.prove en B: antepone '(etiqueta de control) ' al nombre de cada llamada"
+  ],
+  "ramas": {
+   "fallo (calibración de B)": [
+    "cualquier diferencia"
+   ],
+   "inconcluso (no superado)": [
+    "intervención no aplicada",
+    "error del arnés"
+   ],
+   "superado": [
+    "mismas claves, aciertos, estados y n_B que el gemelo en B"
+   ]
+  }
+ },
+ "cambio": "eq",
+ "codigos_admitidos": null,
+ "condicion": "C (y B como calibración)",
+ "familia": "cambio de etiqueta",
+ "fase0_extra": null,
+ "gemelo": "T-w3-inc-eq",
+ "id": "K1-nota",
+ "intervencion": {
+  "fase": "0 y 1",
+  "procedimiento": [
+   "note='etiqueta de control' en register(h, q, f)",
+   "note='refactor equivalente (etiqueta de control)' en evolve"
+  ]
+ },
+ "precondiciones_de_activacion": [
+  "nombres.json registra las dos notas"
+ ],
+ "ramas": {
+  "fallo (refuta R1)": [
+   "cualquier diferencia en un invariante"
+  ],
+  "inconcluso (no superado)": [
+   "falla una precondición de activación",
+   "alguna obligación inconclusa",
+   "error del arnés"
+  ],
+  "parada global": [
+   "modificación parcial inesperada (monitor D11)"
+  ],
+  "superado": [
+   "estado, origen y regla de cada obligación de O(S_d), iguales a los del gemelo",
+   "clase y conjunto de componentes de base de cada certificado de S_d, iguales",
+   "n_C de la fase 1, igual",
+   "cero V1/V2; monitor sin modificación parcial"
+  ]
+ }
+}

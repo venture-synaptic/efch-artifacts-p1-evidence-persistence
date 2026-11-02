@@ -1,0 +1,291 @@
+{
+ "comprobacion": {
+  "certificado": "81f4b076778659c39afb16ff96618472c3d4906e6409131e682545d67be35387",
+  "tipo": "validar"
+ },
+ "descripcion": "REAL que une la candidata c de f con la computación g",
+ "esperado": {
+  "rechazo": "tipo_sujeto_invalido"
+ },
+ "nombre": "rechazo-homonimas-cruzada",
+ "paquete": {
+  "afirmaciones": {
+   "2b21dd8e8411dcd44998c07415e99691af7af42dcbfc115e1af3f0fdc93d48e0": {
+    "clase": "WD",
+    "contexto": {},
+    "esquema": "efch-evidencia/2.5",
+    "id": "2b21dd8e8411dcd44998c07415e99691af7af42dcbfc115e1af3f0fdc93d48e0",
+    "semantica": "efch-0.1",
+    "sujetos": {
+     "objeto": "8c2be80f5d9ecf3c938f6d4f89ab9decfa00e849f2b04d2cdd4ff0d0cf165f9a"
+    }
+   },
+   "45b2907bb9cb48ac278bc49babae4e90fbc31043c46447f7b38d5fc3e00f7923": {
+    "clase": "REAL",
+    "contexto": {},
+    "esquema": "efch-evidencia/2.5",
+    "id": "45b2907bb9cb48ac278bc49babae4e90fbc31043c46447f7b38d5fc3e00f7923",
+    "semantica": "efch-0.1",
+    "sujetos": {
+     "candidata": "8c2be80f5d9ecf3c938f6d4f89ab9decfa00e849f2b04d2cdd4ff0d0cf165f9a",
+     "computacion": "91a6c9c95c7a094fac871de7a3ee6536dcddea0efc3868aa526a83501ba39848"
+    }
+   },
+   "ef722a7878312a4df8ccc3e17f1172c0a1f95538b2ea56d6fc4a1e740e5352d7": {
+    "clase": "REAL",
+    "contexto": {},
+    "esquema": "efch-evidencia/2.5",
+    "id": "ef722a7878312a4df8ccc3e17f1172c0a1f95538b2ea56d6fc4a1e740e5352d7",
+    "semantica": "efch-0.1",
+    "sujetos": {
+     "candidata": "b198fe73762420b9848833231bff81272e2891eb507b27bccf41339a5745a5a2",
+     "computacion": "79ae049890f9cea9ede1cc1d1110474cfa5437e9500056a203cf1d87d688a2e1"
+    }
+   },
+   "f424fe33e214671df45ceb18cc401e055a9978055c1955b846b25ce6ba440e00": {
+    "clase": "REAL",
+    "contexto": {},
+    "esquema": "efch-evidencia/2.5",
+    "id": "f424fe33e214671df45ceb18cc401e055a9978055c1955b846b25ce6ba440e00",
+    "semantica": "efch-0.1",
+    "sujetos": {
+     "candidata": "8c2be80f5d9ecf3c938f6d4f89ab9decfa00e849f2b04d2cdd4ff0d0cf165f9a",
+     "computacion": "79ae049890f9cea9ede1cc1d1110474cfa5437e9500056a203cf1d87d688a2e1"
+    }
+   }
+  },
+  "certificados": {
+   "4691b7fcdcab35bb8456adcae37e13d61da2dca28b9e3b3de5ad8bd182b86e5c": {
+    "afirmacion": "2b21dd8e8411dcd44998c07415e99691af7af42dcbfc115e1af3f0fdc93d48e0",
+    "base": {
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "reglas": "v1",
+     "z3": "v1"
+    },
+    "cierre": {
+     "d7870da50e249f3dadc7ad8a8e31b66c75e6f7930ea89133a6473bd8ab50cd8b": "8c2be80f5d9ecf3c938f6d4f89ab9decfa00e849f2b04d2cdd4ff0d0cf165f9a"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "estado": "probado",
+    "id": "4691b7fcdcab35bb8456adcae37e13d61da2dca28b9e3b3de5ad8bd182b86e5c",
+    "instantanea": "3ca69975374ba30d2a171bd38083f25703e677ae5efb46cffe530cb2adf90efd",
+    "objeto_verificado": "37031d5d665010c46fe30d47b22eb55f4d18079c4fd97e5ab7f76a6d6f7173d4",
+    "premisas": {},
+    "procedencia": null,
+    "regla": "directa",
+    "semantica": "efch-0.1",
+    "via": "directa"
+   },
+   "4ed2ca0dbdf4a873321d3572b64935d1dbdd0f38d1c0a65a2c7d0cd51d454504": {
+    "afirmacion": "45b2907bb9cb48ac278bc49babae4e90fbc31043c46447f7b38d5fc3e00f7923",
+    "base": {
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "reglas": "v1",
+     "z3": "v1"
+    },
+    "cierre": {
+     "d7870da50e249f3dadc7ad8a8e31b66c75e6f7930ea89133a6473bd8ab50cd8b": "8c2be80f5d9ecf3c938f6d4f89ab9decfa00e849f2b04d2cdd4ff0d0cf165f9a",
+     "dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac": "91a6c9c95c7a094fac871de7a3ee6536dcddea0efc3868aa526a83501ba39848"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "estado": "probado",
+    "id": "4ed2ca0dbdf4a873321d3572b64935d1dbdd0f38d1c0a65a2c7d0cd51d454504",
+    "instantanea": "3ca69975374ba30d2a171bd38083f25703e677ae5efb46cffe530cb2adf90efd",
+    "objeto_verificado": "37031d5d665010c46fe30d47b22eb55f4d18079c4fd97e5ab7f76a6d6f7173d4",
+    "premisas": {},
+    "procedencia": null,
+    "regla": "directa",
+    "semantica": "efch-0.1",
+    "via": "directa"
+   },
+   "81f4b076778659c39afb16ff96618472c3d4906e6409131e682545d67be35387": {
+    "afirmacion": "f424fe33e214671df45ceb18cc401e055a9978055c1955b846b25ce6ba440e00",
+    "base": {
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "reglas": "v1",
+     "z3": "v1"
+    },
+    "cierre": {
+     "d7870da50e249f3dadc7ad8a8e31b66c75e6f7930ea89133a6473bd8ab50cd8b": "8c2be80f5d9ecf3c938f6d4f89ab9decfa00e849f2b04d2cdd4ff0d0cf165f9a",
+     "dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac": "91a6c9c95c7a094fac871de7a3ee6536dcddea0efc3868aa526a83501ba39848"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "estado": "probado",
+    "id": "81f4b076778659c39afb16ff96618472c3d4906e6409131e682545d67be35387",
+    "instantanea": "3ca69975374ba30d2a171bd38083f25703e677ae5efb46cffe530cb2adf90efd",
+    "objeto_verificado": "37031d5d665010c46fe30d47b22eb55f4d18079c4fd97e5ab7f76a6d6f7173d4",
+    "premisas": {},
+    "procedencia": null,
+    "regla": "directa",
+    "semantica": "efch-0.1",
+    "via": "directa"
+   },
+   "ae4005f53fafa52ee11af409d8e40d474aec0c0c4f91cc9bffab838e7caf58ac": {
+    "afirmacion": "ef722a7878312a4df8ccc3e17f1172c0a1f95538b2ea56d6fc4a1e740e5352d7",
+    "base": {
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "reglas": "v1",
+     "z3": "v1"
+    },
+    "cierre": {
+     "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": "79ae049890f9cea9ede1cc1d1110474cfa5437e9500056a203cf1d87d688a2e1",
+     "d322082eb4132cdee3a3ef79044026f07fabf861a3949b392200644e697829ea": "b198fe73762420b9848833231bff81272e2891eb507b27bccf41339a5745a5a2"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "estado": "probado",
+    "id": "ae4005f53fafa52ee11af409d8e40d474aec0c0c4f91cc9bffab838e7caf58ac",
+    "instantanea": "3ca69975374ba30d2a171bd38083f25703e677ae5efb46cffe530cb2adf90efd",
+    "objeto_verificado": "955ec2f9c993602fa0d6a350cb0c1f878dbb41af78ae622697ea6a3d451f9d44",
+    "premisas": {},
+    "procedencia": null,
+    "regla": "directa",
+    "semantica": "efch-0.1",
+    "via": "directa"
+   }
+  },
+  "esquema": "efch-evidencia/2.5",
+  "instantaneas": {
+   "3ca69975374ba30d2a171bd38083f25703e677ae5efb46cffe530cb2adf90efd": {
+    "base": {
+     "abi": "v1",
+     "cbmc": "v1",
+     "cpu": "v1",
+     "efch-c": "v1",
+     "efch-core": "v1",
+     "efch-interp": "v1",
+     "efch-smt": "v1",
+     "ejecutor": "v1",
+     "gcc": "v1",
+     "reglas": "v1",
+     "traductor": "v1",
+     "workload": "v1",
+     "z3": "v1"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "id": "3ca69975374ba30d2a171bd38083f25703e677ae5efb46cffe530cb2adf90efd",
+    "revisiones": {
+     "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": "79ae049890f9cea9ede1cc1d1110474cfa5437e9500056a203cf1d87d688a2e1",
+     "9db579c0348929f059c015db4445ec1a9d8f9a6851be0190b7035225c11fe65b": "fc0b112e728496fe2694a85f72961bbda0c6ef4cf5052b3936b4798c9c760f34",
+     "d322082eb4132cdee3a3ef79044026f07fabf861a3949b392200644e697829ea": "b198fe73762420b9848833231bff81272e2891eb507b27bccf41339a5745a5a2",
+     "d7870da50e249f3dadc7ad8a8e31b66c75e6f7930ea89133a6473bd8ab50cd8b": "8c2be80f5d9ecf3c938f6d4f89ab9decfa00e849f2b04d2cdd4ff0d0cf165f9a",
+     "dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac": "91a6c9c95c7a094fac871de7a3ee6536dcddea0efc3868aa526a83501ba39848"
+    },
+    "semantica": "efch-0.1"
+   }
+  },
+  "ranuras": {
+   "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+    "nombre": "g",
+    "tipo": "computacion"
+   },
+   "9db579c0348929f059c015db4445ec1a9d8f9a6851be0190b7035225c11fe65b": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "9db579c0348929f059c015db4445ec1a9d8f9a6851be0190b7035225c11fe65b",
+    "nombre": "p",
+    "tipo": "propiedad"
+   },
+   "d322082eb4132cdee3a3ef79044026f07fabf861a3949b392200644e697829ea": {
+    "ambito": "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+    "esquema": "efch-evidencia/2.5",
+    "id": "d322082eb4132cdee3a3ef79044026f07fabf861a3949b392200644e697829ea",
+    "nombre": "c",
+    "tipo": "candidata"
+   },
+   "d7870da50e249f3dadc7ad8a8e31b66c75e6f7930ea89133a6473bd8ab50cd8b": {
+    "ambito": "dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac",
+    "esquema": "efch-evidencia/2.5",
+    "id": "d7870da50e249f3dadc7ad8a8e31b66c75e6f7930ea89133a6473bd8ab50cd8b",
+    "nombre": "c",
+    "tipo": "candidata"
+   },
+   "dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac": {
+    "ambito": "",
+    "esquema": "efch-evidencia/2.5",
+    "id": "dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac",
+    "nombre": "f",
+    "tipo": "computacion"
+   }
+  },
+  "registros": {},
+  "revisiones": {
+   "79ae049890f9cea9ede1cc1d1110474cfa5437e9500056a203cf1d87d688a2e1": {
+    "contenido": "955ec2f9c993602fa0d6a350cb0c1f878dbb41af78ae622697ea6a3d451f9d44",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation g ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation g ((x (bv 8))) (bv 8)) (const 8 0))",
+    "forma_fuente": "20135eaf41059afa0e94a188e83348b4f5255e2fba37139661550cbfb7faeae7",
+    "fuente": "(computation g (input x (bv 8)) (output (bv 8)) (semantics 0))",
+    "id": "79ae049890f9cea9ede1cc1d1110474cfa5437e9500056a203cf1d87d688a2e1",
+    "ranura": "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7",
+    "semantica": "efch-0.1"
+   },
+   "8c2be80f5d9ecf3c938f6d4f89ab9decfa00e849f2b04d2cdd4ff0d0cf165f9a": {
+    "contenido": "37031d5d665010c46fe30d47b22eb55f4d18079c4fd97e5ab7f76a6d6f7173d4",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation f ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation f ((x (bv 8))) (bv 8)) x)",
+    "forma_fuente": "712d13364b111e084aab4a279755f6f821bd9c1e74b0f5678d53b97b1b5ae157",
+    "fuente": "(candidate c (implements f) (body x))",
+    "id": "8c2be80f5d9ecf3c938f6d4f89ab9decfa00e849f2b04d2cdd4ff0d0cf165f9a",
+    "ranura": "d7870da50e249f3dadc7ad8a8e31b66c75e6f7930ea89133a6473bd8ab50cd8b",
+    "semantica": "efch-0.1"
+   },
+   "91a6c9c95c7a094fac871de7a3ee6536dcddea0efc3868aa526a83501ba39848": {
+    "contenido": "37031d5d665010c46fe30d47b22eb55f4d18079c4fd97e5ab7f76a6d6f7173d4",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation f ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation f ((x (bv 8))) (bv 8)) x)",
+    "forma_fuente": "f7a7b28f57f870ad2ccf1d78ea94ba450b3ebf2f777e67e1f0458b47369204c7",
+    "fuente": "(computation f (input x (bv 8)) (output (bv 8)) (semantics x))",
+    "id": "91a6c9c95c7a094fac871de7a3ee6536dcddea0efc3868aa526a83501ba39848",
+    "ranura": "dd05784cb9f3bc9b67c85b3de79bd7cff192be389b552975edb47f4e406595ac",
+    "semantica": "efch-0.1"
+   },
+   "b198fe73762420b9848833231bff81272e2891eb507b27bccf41339a5745a5a2": {
+    "contenido": "955ec2f9c993602fa0d6a350cb0c1f878dbb41af78ae622697ea6a3d451f9d44",
+    "dependencias": {},
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(computation g ((x (bv 8))) (bv 8))",
+    "forma_canonica": "(efch 0.1 (computation g ((x (bv 8))) (bv 8)) (const 8 0))",
+    "forma_fuente": "91bc4aad9c20fe5dd3d73483252e08859c241436585574857a7bf0701390d746",
+    "fuente": "(candidate c (implements g) (body 0))",
+    "id": "b198fe73762420b9848833231bff81272e2891eb507b27bccf41339a5745a5a2",
+    "ranura": "d322082eb4132cdee3a3ef79044026f07fabf861a3949b392200644e697829ea",
+    "semantica": "efch-0.1"
+   },
+   "fc0b112e728496fe2694a85f72961bbda0c6ef4cf5052b3936b4798c9c760f34": {
+    "contenido": "d09c38b2c34650df8b4389ff9aee5893aa7cd5c03b37d839113a5541dbded8ea",
+    "dependencias": {
+     "6bcab447b33ef2ef3c35410ea064cd3d07eb5858ca5dbb68e6bc2b3ad80611b7": "79ae049890f9cea9ede1cc1d1110474cfa5437e9500056a203cf1d87d688a2e1"
+    },
+    "esquema": "efch-evidencia/2.5",
+    "firma": "(property ((x (bv 8))))",
+    "forma_canonica": "(efch 0.1 (property ((x (bv 8)))) (eq (let _0 x (const 8 0)) (const 8 0)))",
+    "forma_fuente": "5cdfc08170cbbe06717a160960bfeb1d36d0e06c1c2ca64a15547cfb5e1ba435",
+    "fuente": "(property p (forall ((x (bv 8))) (eq (call g x) 0)))",
+    "id": "fc0b112e728496fe2694a85f72961bbda0c6ef4cf5052b3936b4798c9c760f34",
+    "ranura": "9db579c0348929f059c015db4445ec1a9d8f9a6851be0190b7035225c11fe65b",
+    "semantica": "efch-0.1"
+   }
+  }
+ }
+}

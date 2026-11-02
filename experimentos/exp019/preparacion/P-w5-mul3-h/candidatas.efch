@@ -1,0 +1,8 @@
+; EXP-019 P-w5-mul3-h, candidatas (fase 0). Generado por experimentos/exp019/generar.py; no editar.
+(efch 0.1
+  (candidate c0 (implements f)
+    (body (mul x 3)))
+  (candidate c1 (implements f)
+    (body (or (mul x 3) 0)))
+  (candidate c2 (implements f)
+    (body (xor (xor (mul x 3) 1) 1))))

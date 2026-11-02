@@ -1,0 +1,41 @@
+{
+ "alcance": "frases y detalle fuera de decisiones y de objetos con hash; NO la clasificación por posición (store.py usa obls[0]): no comprobado en EXP-019",
+ "calibracion_B": null,
+ "cambio": "eq",
+ "codigos_admitidos": null,
+ "condicion": "C",
+ "familia": "cambio de etiqueta",
+ "fase0_extra": null,
+ "gemelo": "T-w3-inc-eq",
+ "id": "K3-nombres-de-obligacion",
+ "intervencion": {
+  "fase": "0",
+  "procedimiento": [
+   "doble sobre pipeline.verify_candidate visto por store.realize: intercambia `obligacion` entre las dos obligaciones y pone `detalle` = '(CBMC)'; conserva orden, clase, herramienta, estado, contraejemplo y segundos"
+  ]
+ },
+ "precondiciones_de_activacion": [
+  "el doble se llamó 3 veces y su traza guarda la salida antes y después"
+ ],
+ "ramas": {
+  "fallo (refuta R1)": [
+   "cualquier diferencia en un invariante",
+   "ids de los objetos contractuales de la fase 0 distintos de los del gemelo"
+  ],
+  "inconcluso (no superado)": [
+   "falla una precondición de activación",
+   "alguna obligación inconclusa",
+   "error del arnés",
+   "el gemelo no reproduce sus propios ids de la fase 0 en sus 5 repeticiones: inconcluso del control y fallo de calibración, nunca superado omitiendo el invariante"
+  ],
+  "parada global": [
+   "modificación parcial inesperada (monitor D11)"
+  ],
+  "superado": [
+   "estado, origen y regla de cada obligación de O(S_d), iguales a los del gemelo",
+   "clase y conjunto de componentes de base de cada certificado de S_d, iguales",
+   "n_C de la fase 1, igual",
+   "cero V1/V2; monitor sin modificación parcial"
+  ]
+ }
+}

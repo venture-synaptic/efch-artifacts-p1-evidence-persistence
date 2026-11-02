@@ -1,0 +1,70 @@
+{
+ "$id": "https://efch.invalid/evidencia/2.5/revision.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "properties": {
+  "contenido": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "dependencias": {
+   "additionalProperties": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$",
+    "type": "string"
+   },
+   "propertyNames": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$"
+   },
+   "type": "object"
+  },
+  "esquema": {
+   "const": "efch-evidencia/2.5"
+  },
+  "firma": {
+   "type": "string"
+  },
+  "forma_canonica": {
+   "type": "string"
+  },
+  "forma_fuente": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "fuente": {
+   "type": "string"
+  },
+  "id": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "ranura": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "semantica": {
+   "enum": [
+    "efch-0.1"
+   ]
+  }
+ },
+ "required": [
+  "contenido",
+  "dependencias",
+  "esquema",
+  "firma",
+  "forma_canonica",
+  "forma_fuente",
+  "fuente",
+  "id",
+  "ranura",
+  "semantica"
+ ],
+ "title": "revision",
+ "type": "object"
+}

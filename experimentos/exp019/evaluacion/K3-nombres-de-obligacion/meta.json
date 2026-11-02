@@ -1,0 +1,28 @@
+{
+ "ancho": 3,
+ "cambio": "eq",
+ "candidatas": {
+  "c0": "(add x 1)",
+  "c1": "(add 0 (add x 1))",
+  "c2": "(sub (add (add x 1) 1) 1)"
+ },
+ "contaminada": false,
+ "control": true,
+ "cuerpo": "inc",
+ "cuerpos_antes": {
+  "f": "(add x 1)",
+  "h": "x",
+  "q": "0"
+ },
+ "cuerpos_despues": {
+  "f": "(add (add x 1) 0)",
+  "h": "x",
+  "q": "0"
+ },
+ "doc_f_despues": null,
+ "evoluciona": "f",
+ "familia": "cambio de etiqueta",
+ "fase0_extra": null,
+ "gemelo": "T-w3-inc-eq",
+ "id": "K3-nombres-de-obligacion"
+}

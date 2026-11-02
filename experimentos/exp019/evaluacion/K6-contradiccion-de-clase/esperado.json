@@ -1,0 +1,85 @@
+{
+ "alcance": "una contradicción clase/papeles",
+ "calibracion_B": {
+  "intervencion": [
+   "fase 0 de B en P; copia a Q; mutación de Q/cache-B.json (JSON determinista); comprobación del diff; fase 1 de B en un subproceso nuevo que carga Q",
+   "refirmado de entrada: clave = sha256 del texto nuevo; la entrada original se retira de Q (no de P)",
+   "E0 = la entrada de cache-B.json cuya clave es la de la consulta WD(c0) de la fase 0 (por la traza); en el gemelo, las obligaciones de la fase 1 que aciertan en E0 quedan fijadas por su traza",
+   "E0' = E0 con la línea de tipos (bv w) → (bv w+1), refirmada"
+  ],
+  "ramas": {
+   "fallo (calibración de B)": [
+    "algún acierto en E0'",
+    "estado distinto del gemelo",
+    "Con activación e intervención válidas y sin error del arnés, cualquier incumplimiento de los requisitos de superado, incluidas delegación, `n_B` y diagnóstico de KB5, es fallo de calibración de B"
+   ],
+   "inconcluso (no superado)": [
+    "en el gemelo ninguna obligación de la fase 1 acierta en E0",
+    "intervención no aplicada",
+    "error del arnés"
+   ],
+   "superado": [
+    "ninguna llamada de la fase 1 acierta en E0'",
+    "las obligaciones que en el gemelo acertaban en E0 se delegan; n_B = n_B(gemelo) + su número; resto igual al gemelo",
+    "en KB5, además, diagnóstico del cargador «clave ≠ sha256(texto)» con la clave de E0"
+   ]
+  }
+ },
+ "cambio": "eq",
+ "codigos_admitidos": [
+  "papel_invalido",
+  "tipo_sujeto_invalido"
+ ],
+ "condicion": "C (y B como calibración)",
+ "familia": "ausencia o contradicción",
+ "fase0_extra": null,
+ "gemelo": "T-w3-inc-eq",
+ "id": "K6-contradiccion-de-clase",
+ "intervencion": {
+  "fase": "clon tras la fase 0",
+  "mutacion": [
+   "A0' = A0 con `clase` = 'WD' y los mismos sujetos (candidata, computacion)",
+   "refirmado: id = sha256 de la forma canónica sin `id`; el archivo se escribe con el id nuevo y el original se borra de Q (no de P); toda referencia en objetos/ al id antiguo se actualiza y su objeto se refirma igual; la clave de costes.json se traslada; pasos/ no se toca (exportaciones históricas)"
+  ],
+  "objetos": "A0 = la única afirmación de Q/objetos/afirmaciones con clase REAL y sujetos.candidata = revisión de la ranura (candidata, ámbito f, c0) de S_a; R0 = el único certificado directa probado con afirmacion = A0",
+  "procedimiento": [
+   "fase 0 en un almacén nuevo P (subproceso 1); P se conserva intacto como evidencia",
+   "shutil.copytree(P, Q)",
+   "mutación sobre los archivos de Q (campo `mutacion`), escrita por el mutador sin usar efch: los objetos contractuales en la forma canónica de la v2.7 §2.1; costes.json (y la caché de B) en JSON determinista con claves ordenadas, floats finitos y tuplas como arrays",
+   "comprobación de la intervención: releer Q; el diff de sha256 de todo Q frente a P es exactamente el previsto",
+   "foto de integridad (disco) de Q después de la mutación y antes de la fase 1",
+   "fase 1 en un subproceso nuevo con Store(Q) nuevo"
+  ]
+ },
+ "precondiciones_de_activacion": [
+  "en el gemelo (misma repetición), la procedencia de REAL(c0, f_d) por R-REAL es el certificado que corresponde a R0 (el objeto se habría usado)",
+  "ningún objeto de Q/objetos, salvo R0, referencia A0 o R0 antes de mutar",
+  "la mutación se aplicó (diff exacto) y Store(Q) se creó después"
+ ],
+ "ramas": {
+  "fallo (refuta R1)": [
+   "A0' o R0' aparecen como origen, premisa o procedencia de un certificado de S_d",
+   "REAL(c0, f_d) probado por R-REAL o conservada desde R0'",
+   "cualquier V1/V2"
+  ],
+  "inconcluso (no superado)": [
+   "falla una precondición de activación o la comprobación de la intervención",
+   "rechazo sin diagnóstico estructurado enlazado (el objeto no se usa, pero no hay código admitido enlazado)",
+   "cualquier otra excepción (p. ej., KeyError(ID), IdentidadDistinta, o un Rechazo sin código admitido o sin enlace): inconcluso, nunca superado",
+   "obligación desconocida; error del arnés"
+  ],
+  "parada global": [
+   "modificación parcial inesperada (monitor D11)"
+  ],
+  "superado: rechazo estructurado diagnosticado (excepción)": [
+   "evolve lanza un Rechazo (efch.identidad.Rechazo) con `codigo` admitido y cuya ruta o detalle contiene el id de A0' o R0'",
+   "memoria y disco idénticos antes y después de la operación; aquí no se exige nada de c1 ni de c2"
+  ],
+  "superado: rechazo estructurado diagnosticado (operación completa)": [
+   "rechazo estructurado con código admitido y enlazado al objeto mutado: (a) una entrada de Store(Q).descartados cuyo id es el de A0' o R0'; o (b) una entrada de informe.rechazos_transferencia['c0'] con código admitido, siendo R0' el único certificado REAL(c0, ·) de Q (precondición comprobada)",
+   "ni A0' ni R0' son origen, premisa ni procedencia de ningún certificado de S_d (contraste)",
+   "REAL(c0, f_d) probado por vía directa; REAL(c1, f_d) y REAL(c2, f_d) por R-REAL, como en el gemelo",
+   "cero V1/V2; monitor sin modificación parcial"
+  ]
+ }
+}

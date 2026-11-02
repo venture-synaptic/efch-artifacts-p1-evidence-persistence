@@ -1,0 +1,8 @@
+; EXP-019 P-w5-llamada-eq, candidatas (fase 0). Generado por experimentos/exp019/generar.py; no editar.
+(efch 0.1
+  (candidate c0 (implements f)
+    (body (call h (xor x 1))))
+  (candidate c1 (implements f)
+    (body (or (call h (xor x 1)) 0)))
+  (candidate c2 (implements f)
+    (body (xor (xor (call h (xor x 1)) 1) 1))))

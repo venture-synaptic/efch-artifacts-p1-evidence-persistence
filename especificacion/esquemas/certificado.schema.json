@@ -1,0 +1,287 @@
+{
+ "$id": "https://efch.invalid/evidencia/2.5/certificado.schema.json",
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "additionalProperties": false,
+ "allOf": [
+  {
+   "if": {
+    "properties": {
+     "via": {
+      "const": "directa"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "regla": {
+      "enum": [
+       "directa"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "via": {
+      "const": "conservada"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "regla": {
+      "enum": [
+       "conservacion"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "via": {
+      "const": "cache"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "regla": {
+      "enum": [
+       "conservacion"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "via": {
+      "const": "transferida"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "regla": {
+      "enum": [
+       "R-PROP",
+       "R-REAL",
+       "R-REFUT"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "else": {
+    "properties": {
+     "objeto_verificado": {
+      "type": "null"
+     },
+     "procedencia": {
+      "maxLength": 64,
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+     }
+    }
+   },
+   "if": {
+    "properties": {
+     "regla": {
+      "const": "directa"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "objeto_verificado": {
+      "maxLength": 64,
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+     },
+     "premisas": {
+      "maxProperties": 0
+     },
+     "procedencia": {
+      "type": "null"
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "regla": {
+      "const": "conservacion"
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "premisas": {
+      "maxProperties": 0
+     }
+    }
+   }
+  },
+  {
+   "if": {
+    "properties": {
+     "regla": {
+      "enum": [
+       "R-PROP",
+       "R-REAL",
+       "R-REFUT"
+      ]
+     }
+    }
+   },
+   "then": {
+    "properties": {
+     "premisas": {
+      "required": [
+       "origen"
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "properties": {
+  "afirmacion": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "base": {
+   "additionalProperties": {
+    "type": "string"
+   },
+   "propertyNames": {
+    "enum": [
+     "abi",
+     "cbmc",
+     "cpu",
+     "efch-c",
+     "efch-core",
+     "efch-interp",
+     "efch-smt",
+     "ejecutor",
+     "gcc",
+     "reglas",
+     "traductor",
+     "workload",
+     "z3"
+    ]
+   },
+   "type": "object"
+  },
+  "cierre": {
+   "additionalProperties": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$",
+    "type": "string"
+   },
+   "propertyNames": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$"
+   },
+   "type": "object"
+  },
+  "esquema": {
+   "const": "efch-evidencia/2.5"
+  },
+  "estado": {
+   "enum": [
+    "probado",
+    "refutado"
+   ]
+  },
+  "id": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "instantanea": {
+   "maxLength": 64,
+   "pattern": "^[0-9a-f]{64}$",
+   "type": "string"
+  },
+  "objeto_verificado": {
+   "anyOf": [
+    {
+     "maxLength": 64,
+     "pattern": "^[0-9a-f]{64}$",
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ]
+  },
+  "premisas": {
+   "additionalProperties": {
+    "maxLength": 64,
+    "pattern": "^[0-9a-f]{64}$",
+    "type": "string"
+   },
+   "type": "object"
+  },
+  "procedencia": {
+   "anyOf": [
+    {
+     "maxLength": 64,
+     "pattern": "^[0-9a-f]{64}$",
+     "type": "string"
+    },
+    {
+     "type": "null"
+    }
+   ]
+  },
+  "regla": {
+   "enum": [
+    "directa",
+    "conservacion",
+    "R-PROP",
+    "R-REAL",
+    "R-REFUT"
+   ]
+  },
+  "semantica": {
+   "enum": [
+    "efch-0.1"
+   ]
+  },
+  "via": {
+   "enum": [
+    "directa",
+    "conservada",
+    "cache",
+    "transferida"
+   ]
+  }
+ },
+ "required": [
+  "afirmacion",
+  "base",
+  "cierre",
+  "esquema",
+  "estado",
+  "id",
+  "instantanea",
+  "objeto_verificado",
+  "premisas",
+  "procedencia",
+  "regla",
+  "semantica",
+  "via"
+ ],
+ "title": "certificado",
+ "type": "object"
+}

@@ -1,4 +1,4 @@
-# EFCH EXP-019 — research artifacts
+# EFCH P1 artifacts — Safe Reuse Is Not Enough (EXP-019)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23873679.svg)](https://doi.org/10.5281/zenodo.23873679)
 
@@ -72,7 +72,7 @@ interpretation.
 
 Other VentureSynaptic Labs artifact packages for EFCH (one repository and DOI per manuscript):
 
-- [efch-artifacts-lang](https://github.com/venture-synaptic/efch-artifacts-lang): EFCH Lang experiments (EXP-004 to EXP-015) and their manuscript (DOI [10.5281/zenodo.23874419](https://doi.org/10.5281/zenodo.23874419)).
+- [efch-artifacts-p2-lang-binary-decoding](https://github.com/venture-synaptic/efch-artifacts-p2-lang-binary-decoding): EFCH Lang experiments (EXP-004 to EXP-015) and their manuscript (DOI [10.5281/zenodo.23874419](https://doi.org/10.5281/zenodo.23874419)).
 
 ## License
 

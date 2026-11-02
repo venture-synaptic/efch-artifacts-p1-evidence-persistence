@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use these artifacts, please cite them as below."
-title: "EFCH EXP-019 research artifacts"
+title: "EFCH P1 artifacts — Safe Reuse Is Not Enough (EXP-019)"
 type: software
 authors:
   - family-names: "Cueva Huari"
     given-names: "Erik Fisher"
     orcid: "https://orcid.org/0000-0001-7268-5510"
     affiliation: "VentureSynaptic Labs"
-repository-code: "https://github.com/venture-synaptic/efch-artifacts-exp019"
+repository-code: "https://github.com/venture-synaptic/efch-artifacts-p1-evidence-persistence"
 license: Apache-2.0
 version: "v1.1-exp019"
 date-released: "2026-11-02"

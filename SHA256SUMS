@@ -640,5 +640,5 @@ f2bcb209f035f76ee92119981f8272c0e319e6386579dd37e0b44b57aaed800f  ./experimentos
 9d079b267d9d14ed03b822bdda36be361223516085bb3d0a503e8790c62754d5  ./experimentos/exp019/preparacion/P-w6-xor1-q/meta.json
 6a333bba181e25e4a903d1a714f416ee05ded54efdf6eeb6e44d0ef9aa8097ef  ./experimentos/exp019/preparacion/orden.json
 7a2dc03ef777ea5b93b54690fcbe1caaaa5d4bbae96a691d84c2064c8e8f3eb8  ./paper/README.md
-e27acd199643a2da3afc24ba5691326cca7f990f1f9795c3a14c6b90806ce798  ./paper/main.tex
+8c9a94d48e1172ec9d97363c1189fafe8f6af36997fc64445caa886fe9eb456f  ./paper/main.tex
 112375e9056ad6de88061f74d994c3e005676289ba6b588394b05f3dd15e6d58  ./scripts/vendor_z3.sh
